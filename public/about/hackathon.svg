@@ -1,0 +1,39 @@
+<svg width="600" height="800" viewBox="0 0 600 800" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="hackBg" x1="0" y1="0" x2="600" y2="800" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="50%" stop-color="#1e1b4b"/>
+      <stop offset="100%" stop-color="#312e81"/>
+    </linearGradient>
+    <radialGradient id="hackGlow" cx="300" cy="380" r="280" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#fbbf24" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#fbbf24" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="goldTrophy" x1="200" y1="260" x2="400" y2="460" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#fef08a"/>
+      <stop offset="50%" stop-color="#f59e0b"/>
+      <stop offset="100%" stop-color="#b45309"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="600" height="800" fill="url(#hackBg)"/>
+  <circle cx="300" cy="380" r="240" fill="url(#hackGlow)"/>
+
+  <!-- Trophy Cup Silhouette -->
+  <!-- Cup Base & Stem -->
+  <rect x="250" y="470" width="100" height="24" rx="6" fill="url(#goldTrophy)"/>
+  <path d="M285 410 L315 410 L310 470 L290 470 Z" fill="url(#goldTrophy)"/>
+  
+  <!-- Cup Body -->
+  <path d="M220 270 C220 380 270 410 300 410 C330 410 380 380 380 270 Z" fill="url(#goldTrophy)"/>
+  
+  <!-- Trophy Handles -->
+  <path d="M220 290 C170 300 170 360 230 370" stroke="url(#goldTrophy)" stroke-width="12" stroke-linecap="round" fill="none"/>
+  <path d="M380 290 C430 300 430 360 370 370" stroke="url(#goldTrophy)" stroke-width="12" stroke-linecap="round" fill="none"/>
+
+  <!-- 1st Place Star -->
+  <path d="M300 310 L307 332 L330 332 L312 346 L319 368 L300 354 L281 368 L288 346 L270 332 L293 332 Z" fill="#ffffff"/>
+
+  <text x="300" y="680" font-family="system-ui, sans-serif" font-size="28" font-weight="900" fill="#ffffff" text-anchor="middle" letter-spacing="4">COMPETITIONS</text>
+  <text x="300" y="715" font-family="monospace" font-size="14" fill="#fde047" text-anchor="middle" letter-spacing="2">HACKATHONS &amp; AWARDS</text>
+</svg>

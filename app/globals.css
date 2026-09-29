@@ -1,0 +1,179 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap");
+@import "tailwindcss";
+
+@layer base {
+  :root, [data-theme="dark"] {
+    --background: #0a0a0f;
+    --foreground: #e4e4e7;
+    --muted: #a1a1aa;
+    --muted-foreground: #71717a;
+    --accent: #8b5cf6;
+    --accent-hover: #a78bfa;
+    --card: #18181b;
+    --card-border: #27272a;
+    --gradient-start: #6366f1;
+    --gradient-end: #ec4899;
+    --shadow-elevation-low: 0px 1px 2px rgba(0, 0, 0, 0.2);
+  }
+
+  [data-theme="light"] {
+    --background: #ffffff;
+    --foreground: #18181b;
+    --muted: #71717a;
+    --muted-foreground: #a1a1aa;
+    --accent: #7c3aed;
+    --accent-hover: #6d28d9;
+    --card: #f4f4f5;
+    --card-border: #e4e4e7;
+    --gradient-start: #4f46e5;
+    --gradient-end: #db2777;
+    --shadow-elevation-low: 0px 1px 2px rgba(0, 0, 0, 0.05);
+  }
+
+  html {
+    scroll-behavior: smooth;
+    font-size: 16px;
+    background-color: var(--background);
+    color: var(--foreground);
+  }
+
+  body {
+    background-color: var(--background);
+    color: var(--foreground);
+    min-height: 100vh;
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
+
+/* Background Atmospheric Dot Grid Pattern */
+.bg-dot-pattern {
+  background-image: radial-gradient(circle, rgba(228, 228, 231, 0.08) 1px, transparent 1px);
+  background-size: 24px 24px;
+}
+
+[data-theme="light"] .bg-dot-pattern {
+  background-image: radial-gradient(circle, rgba(24, 24, 27, 0.05) 1px, transparent 1px);
+}
+
+/* Glassmorphism Styles matching DESIGN_SPEC.md & live site */
+.glass {
+  -webkit-backdrop-filter: blur(16px);
+  backdrop-filter: blur(16px);
+}
+[data-theme="dark"] .glass {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+[data-theme="light"] .glass {
+  background: rgba(0, 0, 0, 0.03);
+  border: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.glass-strong {
+  -webkit-backdrop-filter: blur(12px);
+  backdrop-filter: blur(12px);
+  border: 1px solid var(--card-border);
+}
+[data-theme="dark"] .glass-strong {
+  background: rgba(24, 24, 27, 0.8);
+}
+[data-theme="light"] .glass-strong {
+  background: rgba(255, 255, 255, 0.85);
+}
+
+/* Animated Text Gradient Shimmer - Subtle and smooth, not aggressively flashing */
+@keyframes shimmer-gradient {
+  0% {
+    background-position: 200% 0, 0 0;
+  }
+  100% {
+    background-position: -200% 0, 0 0;
+  }
+}
+
+.text-gradient-shimmer {
+  background-image: 
+    linear-gradient(110deg, transparent 40%, rgba(255, 255, 255, 0.35) 50%, transparent 60%),
+    linear-gradient(135deg, #a855f7 0%, #ec4899 50%, #8b5cf6 100%);
+  background-size: 200% 100%, 100% 100%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shimmer-gradient 6s ease-in-out infinite;
+  display: inline-block;
+}
+
+/* Marquee infinite animation */
+@keyframes marquee {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+/* Radar scan animation for location card */
+@keyframes radar-sweep {
+  0% {
+    left: 0%;
+  }
+  50% {
+    left: 100%;
+  }
+  100% {
+    left: 0%;
+  }
+}
+
+/* Standard Section Layout */
+.section {
+  max-width: 80rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+/* Hide scrollbar for clean chat panel */
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Smooth custom scrollbars */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: var(--background);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--card-border);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #3f3f46;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* Suppress Next.js dev indicator overlay for clean visual captures */
+nextjs-portal,
+#nextjs-dev-tools,
+[data-nextjs-dev-tools-indicator],
+[data-nextjs-toast],
+[data-nextjs-route-announcer] {
+  display: none !important;
+}

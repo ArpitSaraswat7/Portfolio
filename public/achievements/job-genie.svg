@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 360" width="600" height="360">
+  <defs>
+    <linearGradient id="bgGrad3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e1305" />
+      <stop offset="50%" stop-color="#140c03" />
+      <stop offset="100%" stop-color="#0a0601" />
+    </linearGradient>
+    <linearGradient id="glowGrad3" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#f59e0b" stop-opacity="0.8" />
+      <stop offset="100%" stop-color="#ef4444" stop-opacity="0.8" />
+    </linearGradient>
+  </defs>
+  <rect width="600" height="360" rx="24" fill="url(#bgGrad3)" stroke="#78350f" stroke-width="2"/>
+  <circle cx="500" cy="80" r="140" fill="#f59e0b" opacity="0.12" filter="blur(40px)"/>
+
+  <!-- Hackathon Trophy Emblem -->
+  <g transform="translate(60, 60)">
+    <rect width="72" height="72" rx="20" fill="#f59e0b" opacity="0.15" stroke="#f59e0b" stroke-width="1.5"/>
+    <path d="M24 24H48V34C48 40.6 42.6 46 36 46C29.4 46 24 40.6 24 34V24Z" fill="#f59e0b"/>
+    <path d="M24 28H18C16.9 28 16 28.9 16 30C16 34.4 19.6 38 24 38V28Z" fill="#fbbf24"/>
+    <path d="M48 28H54C55.1 28 56 28.9 56 30C56 34.4 52.4 38 48 38V28Z" fill="#fbbf24"/>
+    <path d="M33 46H39V52H33V46Z" fill="#f59e0b"/>
+    <path d="M28 52H44V56H28V52Z" fill="#fbbf24"/>
+  </g>
+
+  <text x="150" y="88" fill="#fcd34d" font-family="Inter, sans-serif" font-size="12" font-weight="700" letter-spacing="3">HACKATHON PODIUM</text>
+  <text x="150" y="118" fill="#ffffff" font-family="Inter, sans-serif" font-size="22" font-weight="800">Job Genie AI Platform</text>
+  <text x="150" y="140" fill="#fde68a" font-family="Inter, sans-serif" font-size="14" font-weight="600">Top Winner in Autonomous Recruitment AI</text>
+
+  <!-- Metric Badges -->
+  <g transform="translate(60, 180)">
+    <rect width="140" height="70" rx="14" fill="#2d1d07" stroke="#54370d" stroke-width="1"/>
+    <text x="20" y="32" fill="#fcd34d" font-family="Inter, sans-serif" font-size="11">Award</text>
+    <text x="20" y="54" fill="#ffffff" font-family="Inter, sans-serif" font-size="14" font-weight="700">1st Place</text>
+  </g>
+
+  <g transform="translate(220, 180)">
+    <rect width="150" height="70" rx="14" fill="#2d1d07" stroke="#54370d" stroke-width="1"/>
+    <text x="20" y="32" fill="#fcd34d" font-family="Inter, sans-serif" font-size="11">Architecture</text>
+    <text x="20" y="54" fill="#fbbf24" font-family="Inter, sans-serif" font-size="14" font-weight="700">LangChain + RAG</text>
+  </g>
+
+  <g transform="translate(390, 180)">
+    <rect width="150" height="70" rx="14" fill="#2d1d07" stroke="#54370d" stroke-width="1"/>
+    <text x="20" y="32" fill="#fcd34d" font-family="Inter, sans-serif" font-size="11">Scoring Match</text>
+    <text x="20" y="54" fill="#ffffff" font-family="Inter, sans-serif" font-size="14" font-weight="700">96.2% Semantic</text>
+  </g>
+
+  <!-- Bottom Accent Line -->
+  <rect x="60" y="290" width="480" height="2" rx="1" fill="url(#glowGrad3)" opacity="0.6"/>
+</svg>

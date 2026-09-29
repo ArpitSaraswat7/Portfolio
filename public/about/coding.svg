@@ -1,0 +1,47 @@
+<svg width="600" height="800" viewBox="0 0 600 800" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="aiBg" x1="0" y1="0" x2="600" y2="800" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#09090b"/>
+      <stop offset="50%" stop-color="#1e1b4b"/>
+      <stop offset="100%" stop-color="#31104b"/>
+    </linearGradient>
+    <radialGradient id="aiGlow" cx="300" cy="380" r="280" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#c084fc" stop-opacity="0.45"/>
+      <stop offset="100%" stop-color="#c084fc" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="600" height="800" fill="url(#aiBg)"/>
+  <circle cx="300" cy="380" r="240" fill="url(#aiGlow)"/>
+
+  <!-- Neural Network Nodes & Connections -->
+  <line x1="200" y1="300" x2="300" y2="240" stroke="#a855f7" stroke-width="2.5" opacity="0.8"/>
+  <line x1="200" y1="300" x2="300" y2="380" stroke="#a855f7" stroke-width="2.5" opacity="0.8"/>
+  <line x1="200" y1="460" x2="300" y2="380" stroke="#a855f7" stroke-width="2.5" opacity="0.8"/>
+  <line x1="200" y1="460" x2="300" y2="520" stroke="#a855f7" stroke-width="2.5" opacity="0.8"/>
+
+  <line x1="300" y1="240" x2="400" y2="330" stroke="#ec4899" stroke-width="2.5" opacity="0.8"/>
+  <line x1="300" y1="380" x2="400" y2="330" stroke="#ec4899" stroke-width="2.5" opacity="0.8"/>
+  <line x1="300" y1="380" x2="400" y2="450" stroke="#ec4899" stroke-width="2.5" opacity="0.8"/>
+  <line x1="300" y1="520" x2="400" y2="450" stroke="#ec4899" stroke-width="2.5" opacity="0.8"/>
+
+  <!-- Input Nodes -->
+  <circle cx="200" cy="300" r="14" fill="#818cf8" stroke="#ffffff" stroke-width="3"/>
+  <circle cx="200" cy="460" r="14" fill="#818cf8" stroke="#ffffff" stroke-width="3"/>
+
+  <!-- Hidden Nodes -->
+  <circle cx="300" cy="240" r="16" fill="#a855f7" stroke="#ffffff" stroke-width="3"/>
+  <circle cx="300" cy="380" r="18" fill="#c084fc" stroke="#ffffff" stroke-width="4"/>
+  <circle cx="300" cy="520" r="16" fill="#a855f7" stroke="#ffffff" stroke-width="3"/>
+
+  <!-- Output Nodes -->
+  <circle cx="400" cy="330" r="16" fill="#ec4899" stroke="#ffffff" stroke-width="3"/>
+  <circle cx="400" cy="450" r="16" fill="#ec4899" stroke="#ffffff" stroke-width="3"/>
+
+  <!-- Glowing Code / Tensor Matrix Bracket -->
+  <path d="M 120 220 L 80 220 L 80 540 L 120 540" stroke="#a855f7" stroke-width="4" stroke-linecap="round" fill="none" opacity="0.6"/>
+  <path d="M 480 220 L 520 220 L 520 540 L 480 540" stroke="#ec4899" stroke-width="4" stroke-linecap="round" fill="none" opacity="0.6"/>
+
+  <text x="300" y="680" font-family="system-ui, sans-serif" font-size="28" font-weight="900" fill="#ffffff" text-anchor="middle" letter-spacing="4">GENAI RESEARCH</text>
+  <text x="300" y="715" font-family="monospace" font-size="14" fill="#e879f9" text-anchor="middle" letter-spacing="2">COMPUTER VISION &amp; LLMS</text>
+</svg>

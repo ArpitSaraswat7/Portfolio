@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 360" width="600" height="360">
+  <defs>
+    <linearGradient id="bgGrad4" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#081b26" />
+      <stop offset="50%" stop-color="#05121a" />
+      <stop offset="100%" stop-color="#02090d" />
+    </linearGradient>
+    <linearGradient id="glowGrad4" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#06b6d4" stop-opacity="0.8" />
+      <stop offset="100%" stop-color="#3b82f6" stop-opacity="0.8" />
+    </linearGradient>
+  </defs>
+  <rect width="600" height="360" rx="24" fill="url(#bgGrad4)" stroke="#164e63" stroke-width="2"/>
+  <circle cx="480" cy="80" r="140" fill="#06b6d4" opacity="0.12" filter="blur(40px)"/>
+
+  <!-- Healthcare Medical Shield Emblem -->
+  <g transform="translate(60, 60)">
+    <rect width="72" height="72" rx="20" fill="#06b6d4" opacity="0.15" stroke="#06b6d4" stroke-width="1.5"/>
+    <path d="M36 18L52 25V42C52 52 45 59 36 62C27 59 20 52 20 42V25L36 18Z" fill="url(#glowGrad4)"/>
+    <path d="M36 28V50 M25 39H47" stroke="#081b26" stroke-width="4" stroke-linecap="round"/>
+  </g>
+
+  <text x="150" y="88" fill="#67e8f9" font-family="Inter, sans-serif" font-size="12" font-weight="700" letter-spacing="3">HEALTHCARE INNOVATION</text>
+  <text x="150" y="118" fill="#ffffff" font-family="Inter, sans-serif" font-size="22" font-weight="800">Skint Help AI Assistant</text>
+  <text x="150" y="140" fill="#a5f3fc" font-family="Inter, sans-serif" font-size="14" font-weight="600">Dermatological Image Classification &amp; Triaging</text>
+
+  <!-- Metric Badges -->
+  <g transform="translate(60, 180)">
+    <rect width="140" height="70" rx="14" fill="#0b2838" stroke="#164e63" stroke-width="1"/>
+    <text x="20" y="32" fill="#67e8f9" font-family="Inter, sans-serif" font-size="11">Diagnostic Accuracy</text>
+    <text x="20" y="54" fill="#ffffff" font-family="Inter, sans-serif" font-size="14" font-weight="700">97.8% Top-1</text>
+  </g>
+
+  <g transform="translate(220, 180)">
+    <rect width="150" height="70" rx="14" fill="#0b2838" stroke="#164e63" stroke-width="1"/>
+    <text x="20" y="32" fill="#67e8f9" font-family="Inter, sans-serif" font-size="11">Skin Conditions</text>
+    <text x="20" y="54" fill="#22d3ee" font-family="Inter, sans-serif" font-size="14" font-weight="700">30+ Categories</text>
+  </g>
+
+  <g transform="translate(390, 180)">
+    <rect width="150" height="70" rx="14" fill="#0b2838" stroke="#164e63" stroke-width="1"/>
+    <text x="20" y="32" fill="#67e8f9" font-family="Inter, sans-serif" font-size="11">Privacy Tier</text>
+    <text x="20" y="54" fill="#ffffff" font-family="Inter, sans-serif" font-size="14" font-weight="700">HIPAA Compliant</text>
+  </g>
+
+  <!-- Bottom Accent Line -->
+  <rect x="60" y="290" width="480" height="2" rx="1" fill="url(#glowGrad4)" opacity="0.6"/>
+</svg>

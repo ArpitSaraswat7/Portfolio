@@ -1,0 +1,42 @@
+<svg width="600" height="800" viewBox="0 0 600 800" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="calBg" x1="0" y1="0" x2="600" y2="800" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="50%" stop-color="#1e1b4b"/>
+      <stop offset="100%" stop-color="#2e1065"/>
+    </linearGradient>
+    <radialGradient id="calGlow" cx="300" cy="400" r="300" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#8b5cf6" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#8b5cf6" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="barGrad" x1="100" y1="350" x2="500" y2="350" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#c084fc"/>
+      <stop offset="50%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#c084fc"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="600" height="800" fill="url(#calBg)"/>
+  <circle cx="300" cy="380" r="260" fill="url(#calGlow)"/>
+
+  <!-- Parallel Bars -->
+  <line x1="120" y1="420" x2="480" y2="420" stroke="url(#barGrad)" stroke-width="8" stroke-linecap="round"/>
+  <line x1="180" y1="420" x2="180" y2="700" stroke="#6b21a8" stroke-width="6" stroke-linecap="round"/>
+  <line x1="420" y1="420" x2="420" y2="700" stroke="#6b21a8" stroke-width="6" stroke-linecap="round"/>
+
+  <!-- Planche / Calisthenics Athlete Silhouette -->
+  <!-- Arms -->
+  <line x1="260" y1="420" x2="280" y2="340" stroke="#f3e8ff" stroke-width="8" stroke-linecap="round"/>
+  <line x1="340" y1="420" x2="320" y2="340" stroke="#f3e8ff" stroke-width="8" stroke-linecap="round"/>
+  <!-- Torso horizontal -->
+  <path d="M240 330 C270 330 380 320 440 310" stroke="#ffffff" stroke-width="14" stroke-linecap="round"/>
+  <!-- Legs -->
+  <path d="M440 310 L520 290" stroke="#e9d5ff" stroke-width="10" stroke-linecap="round"/>
+  <!-- Head -->
+  <circle cx="215" cy="330" r="22" fill="#ffffff"/>
+
+  <!-- Decorative geometric accents -->
+  <circle cx="300" cy="380" r="180" stroke="#a855f7" stroke-width="1.5" stroke-dasharray="8 6" opacity="0.4"/>
+  <text x="300" y="680" font-family="system-ui, sans-serif" font-size="28" font-weight="900" fill="#ffffff" text-anchor="middle" letter-spacing="4">CALISTHENICS</text>
+  <text x="300" y="715" font-family="monospace" font-size="14" fill="#c084fc" text-anchor="middle" letter-spacing="2">STRENGTH &amp; BODY CONTROL</text>
+</svg>

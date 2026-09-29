@@ -1,0 +1,21 @@
+<svg width="600" height="400" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <linearGradient id="mgrad" x1="0%" y1="0%" x2="100%" y2="100%">
+          <stop offset="0%" stop-color="#09090b"/>
+          <stop offset="100%" stop-color="#18181b"/>
+        </linearGradient>
+        <pattern id="grid" width="30" height="30" patternUnits="userSpaceOnUse">
+          <path d="M 30 0 L 0 0 0 30" fill="none" stroke="#27272a" stroke-width="0.75"/>
+        </pattern>
+      </defs>
+      <rect width="600" height="400" fill="url(#mgrad)"/>
+      <rect width="600" height="400" fill="url(#grid)"/>
+      <!-- Stylized Road network -->
+      <path d="M 50 350 Q 200 200 400 220 T 580 100" fill="none" stroke="#3f3f46" stroke-width="3" opacity="0.6"/>
+      <path d="M 100 50 Q 250 250 350 380" fill="none" stroke="#3f3f46" stroke-width="2" opacity="0.5"/>
+      <path d="M 300 200 Q 450 280 550 320" fill="none" stroke="#52525b" stroke-width="2" opacity="0.4"/>
+      <!-- Location marker point -->
+      <circle cx="300" cy="200" r="16" fill="#8b5cf6" opacity="0.2"/>
+      <circle cx="300" cy="200" r="8" fill="#a855f7"/>
+      <circle cx="300" cy="200" r="3" fill="#ffffff"/>
+    </svg>

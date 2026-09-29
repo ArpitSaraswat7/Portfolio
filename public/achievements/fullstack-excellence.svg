@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 360" width="600" height="360">
+  <defs>
+    <linearGradient id="bgGrad5" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#240f1a" />
+      <stop offset="50%" stop-color="#180a11" />
+      <stop offset="100%" stop-color="#0c0509" />
+    </linearGradient>
+    <linearGradient id="glowGrad5" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ec4899" stop-opacity="0.8" />
+      <stop offset="100%" stop-color="#8b5cf6" stop-opacity="0.8" />
+    </linearGradient>
+  </defs>
+  <rect width="600" height="360" rx="24" fill="url(#bgGrad5)" stroke="#831843" stroke-width="2"/>
+  <circle cx="500" cy="80" r="140" fill="#ec4899" opacity="0.12" filter="blur(40px)"/>
+
+  <!-- Code & Agent Sparkle Emblem -->
+  <g transform="translate(60, 60)">
+    <rect width="72" height="72" rx="20" fill="#ec4899" opacity="0.15" stroke="#ec4899" stroke-width="1.5"/>
+    <path d="M26 36L18 36 M46 36L54 36 M36 18L36 26 M36 46L36 54 M36 26L40 32L46 36L40 40L36 46L32 40L26 36L32 32L36 26Z" fill="#ec4899"/>
+  </g>
+
+  <text x="150" y="88" fill="#f472b6" font-family="Inter, sans-serif" font-size="12" font-weight="700" letter-spacing="3">ENGINEERING MILESTONE</text>
+  <text x="150" y="118" fill="#ffffff" font-family="Inter, sans-serif" font-size="22" font-weight="800">15+ Production Apps &amp; Agents</text>
+  <text x="150" y="140" fill="#fbcfe8" font-family="Inter, sans-serif" font-size="14" font-weight="600">Fullstack MERN + Python + Generative AI</text>
+
+  <!-- Metric Badges -->
+  <g transform="translate(60, 180)">
+    <rect width="140" height="70" rx="14" fill="#381426" stroke="#701a45" stroke-width="1"/>
+    <text x="20" y="32" fill="#f472b6" font-family="Inter, sans-serif" font-size="11">Production Code</text>
+    <text x="20" y="54" fill="#ffffff" font-family="Inter, sans-serif" font-size="14" font-weight="700">100k+ Lines</text>
+  </g>
+
+  <g transform="translate(220, 180)">
+    <rect width="150" height="70" rx="14" fill="#381426" stroke="#701a45" stroke-width="1"/>
+    <text x="20" y="32" fill="#f472b6" font-family="Inter, sans-serif" font-size="11">Architecture</text>
+    <text x="20" y="54" fill="#f472b6" font-family="Inter, sans-serif" font-size="14" font-weight="700">Microservices</text>
+  </g>
+
+  <g transform="translate(390, 180)">
+    <rect width="150" height="70" rx="14" fill="#381426" stroke="#701a45" stroke-width="1"/>
+    <text x="20" y="32" fill="#f472b6" font-family="Inter, sans-serif" font-size="11">System Uptime</text>
+    <text x="20" y="54" fill="#ffffff" font-family="Inter, sans-serif" font-size="14" font-weight="700">99.9% Cloud</text>
+  </g>
+
+  <!-- Bottom Accent Line -->
+  <rect x="60" y="290" width="480" height="2" rx="1" fill="url(#glowGrad5)" opacity="0.6"/>
+</svg>

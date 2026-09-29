@@ -1,0 +1,19 @@
+<svg width="600" height="800" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <linearGradient id="pgrad" x1="0%" y1="0%" x2="100%" y2="100%">
+          <stop offset="0%" stop-color="#1e1b4b"/>
+          <stop offset="50%" stop-color="#312e81"/>
+          <stop offset="100%" stop-color="#0f172a"/>
+        </linearGradient>
+        <radialGradient id="glow" cx="50%" cy="40%" r="50%">
+          <stop offset="0%" stop-color="#8b5cf6" stop-opacity="0.4"/>
+          <stop offset="100%" stop-color="#8b5cf6" stop-opacity="0"/>
+        </radialGradient>
+      </defs>
+      <rect width="600" height="800" fill="url(#pgrad)"/>
+      <circle cx="300" cy="320" r="220" fill="url(#glow)"/>
+      <circle cx="300" cy="300" r="90" fill="#a78bfa" opacity="0.8"/>
+      <path d="M 150 560 C 150 430, 450 430, 450 560 Z" fill="#c084fc" opacity="0.6"/>
+      <text x="300" y="650" font-family="system-ui, sans-serif" font-size="28" font-weight="bold" fill="#ffffff" text-anchor="middle" letter-spacing="2">ARPIT</text>
+      <text x="300" y="690" font-family="system-ui, sans-serif" font-size="16" fill="#a1a1aa" text-anchor="middle">MCA (Generative AI) @ SRM</text>
+    </svg>

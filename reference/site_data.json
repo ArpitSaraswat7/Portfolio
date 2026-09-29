@@ -1,0 +1,3202 @@
+{
+  "meta": {
+    "title": "Paweł Szostak | Full Stack Developer",
+    "nextData": {
+      "props": {
+        "pageProps": {},
+        "locale": "en",
+        "siteSettings": {
+          "i18nEnabled": false,
+          "showTemplateUnlockInPoland": false
+        }
+      },
+      "page": "/",
+      "query": {},
+      "buildId": "J568UVX60ceyhTP1KTQjv",
+      "isFallback": false,
+      "isExperimentalCompile": false,
+      "appGip": true,
+      "scriptLoader": []
+    },
+    "scripts": [
+      "https://www.pszostak.pl/_next/static/chunks/7c1a3a69a1898353.js",
+      "https://www.pszostak.pl/_next/static/chunks/fcf832ee1df2b367.js",
+      "https://www.pszostak.pl/_next/static/chunks/8edcb5623dc16937.js",
+      "https://www.pszostak.pl/_next/static/chunks/37154119f418f3cd.js",
+      "https://www.pszostak.pl/_next/static/chunks/99ef9b6b7d706c4a.js",
+      "https://www.pszostak.pl/_next/static/chunks/e2738ebe4e2bdd11.js",
+      "https://www.pszostak.pl/_next/static/chunks/0bfe6fe2f07605f9.js",
+      "https://www.pszostak.pl/_next/static/chunks/turbopack-5457d55392acd872.js",
+      "https://www.pszostak.pl/_next/static/chunks/721812daa71cadcb.js",
+      "https://www.pszostak.pl/_next/static/chunks/922c1bbf58eab76b.js",
+      "https://www.pszostak.pl/_next/static/chunks/7ed3d4cbc9abfe9b.js",
+      "https://www.pszostak.pl/_next/static/chunks/0d8a1a71f2482b26.js",
+      "https://www.pszostak.pl/_next/static/chunks/turbopack-09ccba78dec047d7.js",
+      "https://www.pszostak.pl/_next/static/J568UVX60ceyhTP1KTQjv/_ssgManifest.js",
+      "https://www.pszostak.pl/_next/static/J568UVX60ceyhTP1KTQjv/_buildManifest.js",
+      "https://www.pszostak.pl/_next/static/chunks/a70fe02ecd71244c.js",
+      "https://www.pszostak.pl/_next/static/chunks/1fc7e73c66ed7c86.js",
+      "https://www.pszostak.pl/4806c8f2f9a24b2f/script.js",
+      "{\"props\":{\"pageProps\":{},\"locale\":\"en\",\"siteSettings\":{\"i18nEnabled\":false,\"showTemplateUnlockInPola",
+      "https://static.cloudflareinsights.com/beacon.min.js/v31edd6df95cf4e85bb4c19e7a9bdbcba1788362987495"
+    ],
+    "hasFramerMotion": false,
+    "hasGsap": false,
+    "hasLenis": false,
+    "bodyClass": "antialiased",
+    "htmlClass": "",
+    "htmlDataAttributes": [
+      {
+        "name": "lang",
+        "value": "en"
+      },
+      {
+        "name": "data-theme",
+        "value": "dark"
+      }
+    ]
+  },
+  "cssVariables": {
+    "vars": {
+      "--font-sans": "\"Inter\",system-ui,-apple-system,BlinkMacSystemFont,\"Segoe UI\",Roboto,sans-serif",
+      "--font-mono": "\"JetBrains Mono\",\"Courier New\",monospace"
+    },
+    "rootComputed": {
+      "background": "rgba(0, 0, 0, 0)",
+      "color": "rgb(0, 0, 0)",
+      "fontFamily": "Inter, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, sans-serif",
+      "fontSize": "16px"
+    },
+    "bodyComputed": {
+      "background": "rgb(10, 10, 15)",
+      "color": "rgb(228, 228, 231)",
+      "fontFamily": "Inter, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, sans-serif",
+      "fontSize": "16px"
+    }
+  },
+  "fonts": {
+    "fontFaces": [],
+    "googleFonts": [
+      "https://fonts.googleapis.com/",
+      "https://fonts.gstatic.com/",
+      "https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap"
+    ]
+  },
+  "colors": {},
+  "sections": {
+    "navbar": {
+      "tag": "nav",
+      "id": "",
+      "className": "max-w-350 mx-auto px-6 md:px-8 lg:px-12",
+      "rect": {
+        "width": 1400,
+        "height": 56,
+        "top": 24,
+        "left": 20
+      },
+      "box": {
+        "display": "block",
+        "position": "static",
+        "top": "auto",
+        "left": "auto",
+        "width": "1400px",
+        "maxWidth": "1400px",
+        "minWidth": "0px",
+        "height": "56px",
+        "maxHeight": "none",
+        "padding": "0px 48px",
+        "margin": "0px",
+        "gap": "normal",
+        "gridTemplateColumns": "none",
+        "gridTemplateRows": "none",
+        "flexDirection": "row",
+        "justifyContent": "normal",
+        "alignItems": "normal",
+        "zIndex": "auto"
+      },
+      "typography": {
+        "fontFamily": "Inter, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, sans-serif",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "lineHeight": "27.2px",
+        "letterSpacing": "normal",
+        "color": "rgb(228, 228, 231)",
+        "textTransform": "none"
+      },
+      "surface": {
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "backgroundImage": "none",
+        "border": "0px solid rgb(228, 228, 231)",
+        "borderColor": "rgb(228, 228, 231)",
+        "borderWidth": "0px",
+        "borderRadius": "0px",
+        "boxShadow": "none",
+        "backdropFilter": "none",
+        "opacity": "1"
+      }
+    },
+    "hero": {
+      "tag": "section",
+      "id": "home",
+      "className": "relative min-h-screen flex items-center justify-center px-4",
+      "rect": {
+        "width": 1440,
+        "height": 951.6875,
+        "top": 0,
+        "left": 0
+      },
+      "box": {
+        "display": "flex",
+        "position": "relative",
+        "top": "0px",
+        "left": "0px",
+        "width": "1440px",
+        "maxWidth": "none",
+        "minWidth": "0px",
+        "height": "951.688px",
+        "maxHeight": "none",
+        "padding": "96px 16px 128px",
+        "margin": "0px",
+        "gap": "normal",
+        "gridTemplateColumns": "none",
+        "gridTemplateRows": "none",
+        "flexDirection": "row",
+        "justifyContent": "center",
+        "alignItems": "center",
+        "zIndex": "auto"
+      },
+      "typography": {
+        "fontFamily": "Inter, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, sans-serif",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "lineHeight": "27.2px",
+        "letterSpacing": "normal",
+        "color": "rgb(228, 228, 231)",
+        "textTransform": "none"
+      },
+      "surface": {
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "backgroundImage": "none",
+        "border": "0px solid rgb(228, 228, 231)",
+        "borderColor": "rgb(228, 228, 231)",
+        "borderWidth": "0px",
+        "borderRadius": "0px",
+        "boxShadow": "none",
+        "backdropFilter": "none",
+        "opacity": "1"
+      }
+    },
+    "heroTitle": {
+      "tag": "h1",
+      "id": "",
+      "className": "text-4xl sm:text-5xl md:text-6xl font-bold mb-1 tracking-tight",
+      "rect": {
+        "width": 768,
+        "height": 35.1875,
+        "top": 312,
+        "left": 336
+      },
+      "box": {
+        "display": "block",
+        "position": "static",
+        "top": "auto",
+        "left": "auto",
+        "width": "768px",
+        "maxWidth": "none",
+        "minWidth": "0px",
+        "height": "35.1875px",
+        "maxHeight": "none",
+        "padding": "0px",
+        "margin": "0px 0px 4px",
+        "gap": "normal",
+        "gridTemplateColumns": "none",
+        "gridTemplateRows": "none",
+        "flexDirection": "row",
+        "justifyContent": "normal",
+        "alignItems": "normal",
+        "zIndex": "auto"
+      },
+      "typography": {
+        "fontFamily": "Inter, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, sans-serif",
+        "fontSize": "32px",
+        "fontWeight": "700",
+        "lineHeight": "35.2px",
+        "letterSpacing": "-0.64px",
+        "color": "rgb(228, 228, 231)",
+        "textTransform": "none"
+      },
+      "surface": {
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "backgroundImage": "none",
+        "border": "0px solid rgb(228, 228, 231)",
+        "borderColor": "rgb(228, 228, 231)",
+        "borderWidth": "0px",
+        "borderRadius": "0px",
+        "boxShadow": "none",
+        "backdropFilter": "none",
+        "opacity": "1"
+      }
+    },
+    "heroLetters": [
+      {
+        "text": "Hi, I'm Paweł Szostak",
+        "className": "sm:hidden",
+        "style": null
+      },
+      {
+        "text": "Paweł Szostak",
+        "className": "text-gradient-shimmer",
+        "style": null
+      },
+      {
+        "text": "Hi, I'm Paweł Szostak",
+        "className": "hidden sm:inline",
+        "style": null
+      },
+      {
+        "text": "Paweł Szostak",
+        "className": "text-gradient-shimmer",
+        "style": null
+      }
+    ],
+    "bentoContainer": {
+      "tag": "section",
+      "id": "about",
+      "className": "pb-32 pt-0 px-4 max-w-5xl mx-auto",
+      "rect": {
+        "width": 1024,
+        "height": 762.671875,
+        "top": 951.6875,
+        "left": 208
+      },
+      "box": {
+        "display": "block",
+        "position": "static",
+        "top": "auto",
+        "left": "auto",
+        "width": "1024px",
+        "maxWidth": "1024px",
+        "minWidth": "0px",
+        "height": "762.672px",
+        "maxHeight": "none",
+        "padding": "0px 16px 128px",
+        "margin": "0px",
+        "gap": "normal",
+        "gridTemplateColumns": "none",
+        "gridTemplateRows": "none",
+        "flexDirection": "row",
+        "justifyContent": "normal",
+        "alignItems": "normal",
+        "zIndex": "auto"
+      },
+      "typography": {
+        "fontFamily": "Inter, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, sans-serif",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "lineHeight": "27.2px",
+        "letterSpacing": "normal",
+        "color": "rgb(228, 228, 231)",
+        "textTransform": "none"
+      },
+      "surface": {
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "backgroundImage": "none",
+        "border": "0px solid rgb(228, 228, 231)",
+        "borderColor": "rgb(228, 228, 231)",
+        "borderWidth": "0px",
+        "borderRadius": "0px",
+        "boxShadow": "none",
+        "backdropFilter": "none",
+        "opacity": "1"
+      }
+    },
+    "bentoCards": [
+      {
+        "tag": "div",
+        "id": "",
+        "className": "md:hidden col-span-1 row-span-1 bg-linear-to-br from-(--card) to-(--card-border) border border-(--card-border) rounded-2xl relative overflow-hidden group w-full h-full p-6",
+        "rect": {
+          "width": 0,
+          "height": 0,
+          "top": 0,
+          "left": 0
+        },
+        "box": {
+          "display": "none",
+          "position": "relative",
+          "top": "auto",
+          "left": "auto",
+          "width": "100%",
+          "maxWidth": "none",
+          "minWidth": "0px",
+          "height": "100%",
+          "maxHeight": "none",
+          "padding": "24px",
+          "margin": "0px",
+          "gap": "normal",
+          "gridTemplateColumns": "none",
+          "gridTemplateRows": "none",
+          "flexDirection": "row",
+          "justifyContent": "normal",
+          "alignItems": "normal",
+          "zIndex": "auto"
+        },
+        "typography": {
+          "fontFamily": "Inter, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, sans-serif",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "lineHeight": "27.2px",
+          "letterSpacing": "normal",
+          "color": "rgb(228, 228, 231)",
+          "textTransform": "none"
+        },
+        "surface": {
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "backgroundImage": "linear-gradient(to right bottom in oklab, rgb(24, 24, 27) 0%, rgb(39, 39, 42) 100%)",
+          "border": "1px solid rgb(39, 39, 42)",
+          "borderColor": "rgb(39, 39, 42)",
+          "borderWidth": "1px",
+          "borderRadius": "16px",
+          "boxShadow": "none",
+          "backdropFilter": "none",
+          "opacity": "0"
+        }
+      },
+      {
+        "tag": "div",
+        "id": "",
+        "className": "hidden md:flex col-span-1 row-span-1 md:col-start-1 md:row-start-1 bg-linear-to-br from-(--card) to-(--card-border) border border-(--card-border) backdrop-blur-md rounded-2xl relative overflow-hidden group w-full h-full p-7",
+        "rect": {
+          "width": 306.5234375,
+          "height": 136.800048828125,
+          "top": 970.2874755859375,
+          "left": 232.06640625
+        },
+        "box": {
+          "display": "flex",
+          "position": "relative",
+          "top": "0px",
+          "left": "0px",
+          "width": "322.656px",
+          "maxWidth": "none",
+          "minWidth": "auto",
+          "height": "144px",
+          "maxHeight": "none",
+          "padding": "28px",
+          "margin": "0px",
+          "gap": "normal",
+          "gridTemplateColumns": "none",
+          "gridTemplateRows": "none",
+          "flexDirection": "row",
+          "justifyContent": "normal",
+          "alignItems": "normal",
+          "zIndex": "auto"
+        },
+        "typography": {
+          "fontFamily": "Inter, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, sans-serif",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "lineHeight": "27.2px",
+          "letterSpacing": "normal",
+          "color": "rgb(228, 228, 231)",
+          "textTransform": "none"
+        },
+        "surface": {
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "backgroundImage": "linear-gradient(to right bottom in oklab, rgb(24, 24, 27) 0%, rgb(39, 39, 42) 100%)",
+          "border": "1px solid rgb(39, 39, 42)",
+          "borderColor": "rgb(39, 39, 42)",
+          "borderWidth": "1px",
+          "borderRadius": "16px",
+          "boxShadow": "none",
+          "backdropFilter": "blur(12px)",
+          "opacity": "0"
+        }
+      },
+      {
+        "tag": "div",
+        "id": "",
+        "className": "md:hidden aspect-square col-span-1 row-span-1 rounded-2xl overflow-hidden border border-(--card-border) relative w-full",
+        "rect": {
+          "width": 0,
+          "height": 0,
+          "top": 0,
+          "left": 0
+        },
+        "box": {
+          "display": "none",
+          "position": "relative",
+          "top": "auto",
+          "left": "auto",
+          "width": "100%",
+          "maxWidth": "none",
+          "minWidth": "0px",
+          "height": "auto",
+          "maxHeight": "none",
+          "padding": "0px",
+          "margin": "0px",
+          "gap": "normal",
+          "gridTemplateColumns": "none",
+          "gridTemplateRows": "none",
+          "flexDirection": "row",
+          "justifyContent": "normal",
+          "alignItems": "normal",
+          "zIndex": "auto"
+        },
+        "typography": {
+          "fontFamily": "Inter, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, sans-serif",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "lineHeight": "27.2px",
+          "letterSpacing": "normal",
+          "color": "rgb(228, 228, 231)",
+          "textTransform": "none"
+        },
+        "surface": {
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "backgroundImage": "none",
+          "border": "1px solid rgb(39, 39, 42)",
+          "borderColor": "rgb(39, 39, 42)",
+          "borderWidth": "1px",
+          "borderRadius": "16px",
+          "boxShadow": "none",
+          "backdropFilter": "none",
+          "opacity": "0"
+        }
+      },
+      {
+        "tag": "div",
+        "id": "",
+        "className": "col-span-2 row-span-1 md:col-start-2 md:col-span-2 md:row-start-1 bg-linear-to-br from-(--card) to-(--card-border) border border-(--card-border) backdrop-blur-md rounded-2xl relative overflow-hidden group w-full h-32 md:h-full [--y-side:60px] md:[--y-side:100px] [--y-mid:70px] md:[--y-mid:100px]",
+        "rect": {
+          "width": 624.461669921875,
+          "height": 136.800048828125,
+          "top": 970.2874755859375,
+          "left": 575.0894775390625
+        },
+        "box": {
+          "display": "block",
+          "position": "relative",
+          "top": "0px",
+          "left": "0px",
+          "width": "657.328px",
+          "maxWidth": "none",
+          "minWidth": "auto",
+          "height": "144px",
+          "maxHeight": "none",
+          "padding": "0px",
+          "margin": "0px",
+          "gap": "normal",
+          "gridTemplateColumns": "none",
+          "gridTemplateRows": "none",
+          "flexDirection": "row",
+          "justifyContent": "normal",
+          "alignItems": "normal",
+          "zIndex": "auto"
+        },
+        "typography": {
+          "fontFamily": "Inter, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, sans-serif",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "lineHeight": "27.2px",
+          "letterSpacing": "normal",
+          "color": "rgb(228, 228, 231)",
+          "textTransform": "none"
+        },
+        "surface": {
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "backgroundImage": "linear-gradient(to right bottom in oklab, rgb(24, 24, 27) 0%, rgb(39, 39, 42) 100%)",
+          "border": "1px solid rgb(39, 39, 42)",
+          "borderColor": "rgb(39, 39, 42)",
+          "borderWidth": "1px",
+          "borderRadius": "16px",
+          "boxShadow": "none",
+          "backdropFilter": "blur(12px)",
+          "opacity": "0"
+        }
+      },
+      {
+        "tag": "div",
+        "id": "",
+        "className": "w-full h-full flex justify-center items-end px-2 relative z-10 overflow-hidden rounded-2xl",
+        "rect": {
+          "width": 622.561767578125,
+          "height": 134.89996337890625,
+          "top": 971.2374877929688,
+          "left": 576.0394287109375
+        },
+        "box": {
+          "display": "flex",
+          "position": "relative",
+          "top": "0px",
+          "left": "0px",
+          "width": "655.328px",
+          "maxWidth": "none",
+          "minWidth": "0px",
+          "height": "142px",
+          "maxHeight": "none",
+          "padding": "0px 8px",
+          "margin": "0px",
+          "gap": "normal",
+          "gridTemplateColumns": "none",
+          "gridTemplateRows": "none",
+          "flexDirection": "row",
+          "justifyContent": "center",
+          "alignItems": "flex-end",
+          "zIndex": "10"
+        },
+        "typography": {
+          "fontFamily": "Inter, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, sans-serif",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "lineHeight": "27.2px",
+          "letterSpacing": "normal",
+          "color": "rgb(228, 228, 231)",
+          "textTransform": "none"
+        },
+        "surface": {
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "backgroundImage": "none",
+          "border": "0px solid rgb(228, 228, 231)",
+          "borderColor": "rgb(228, 228, 231)",
+          "borderWidth": "0px",
+          "borderRadius": "16px",
+          "boxShadow": "none",
+          "backdropFilter": "none",
+          "opacity": "1"
+        }
+      },
+      {
+        "tag": "div",
+        "id": "",
+        "className": "w-1/3 h-44 -mr-6 z-10 bg-(--card) border border-(--foreground)/10 border-b-0 rounded-t-xl p-3 pr-6 md:p-4 flex flex-col justify-start shadow-[0_-5px_30px_rgba(0,0,0,0.3)] hover:shadow-[0_-5px_35px_rgba(168,85,247,0.5)] hover:border-purple-500/50 transition-colors duration-200 relative group/card overflow-hidden",
+        "rect": {
+          "width": 202.4390869140625,
+          "height": 167.199951171875,
+          "top": 1033.9375,
+          "left": 586.2073974609375
+        },
+        "box": {
+          "display": "flex",
+          "position": "relative",
+          "top": "0px",
+          "left": "0px",
+          "width": "213.094px",
+          "maxWidth": "none",
+          "minWidth": "auto",
+          "height": "176px",
+          "maxHeight": "none",
+          "padding": "16px",
+          "margin": "0px -24px 0px 0px",
+          "gap": "normal",
+          "gridTemplateColumns": "none",
+          "gridTemplateRows": "none",
+          "flexDirection": "column",
+          "justifyContent": "flex-start",
+          "alignItems": "normal",
+          "zIndex": "10"
+        },
+        "typography": {
+          "fontFamily": "Inter, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, sans-serif",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "lineHeight": "27.2px",
+          "letterSpacing": "normal",
+          "color": "rgb(228, 228, 231)",
+          "textTransform": "none"
+        },
+        "surface": {
+          "backgroundColor": "rgb(24, 24, 27)",
+          "backgroundImage": "none",
+          "border": "",
+          "borderColor": "oklab(0.919723 0.0011749 -0.00385052 / 0.1)",
+          "borderWidth": "1px 1px 0px",
+          "borderRadius": "12px 12px 0px 0px",
+          "boxShadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.3) 0px -5px 30px 0px",
+          "backdropFilter": "none",
+          "opacity": "1"
+        }
+      },
+      {
+        "tag": "div",
+        "id": "",
+        "className": "absolute top-0 left-1/4 right-1/4 h-px bg-linear-to-r from-transparent via-purple-500/50 to-transparent opacity-100 md:opacity-0 md:group-hover/card:opacity-100 transition-opacity duration-300",
+        "rect": {
+          "width": 100.28436279296875,
+          "height": 0.9500732421875,
+          "top": 1034.887451171875,
+          "left": 637.2847900390625
+        },
+        "box": {
+          "display": "block",
+          "position": "absolute",
+          "top": "0px",
+          "left": "52.7656px",
+          "width": "105.562px",
+          "maxWidth": "none",
+          "minWidth": "0px",
+          "height": "1px",
+          "maxHeight": "none",
+          "padding": "0px",
+          "margin": "0px",
+          "gap": "normal",
+          "gridTemplateColumns": "none",
+          "gridTemplateRows": "none",
+          "flexDirection": "row",
+          "justifyContent": "normal",
+          "alignItems": "normal",
+          "zIndex": "auto"
+        },
+        "typography": {
+          "fontFamily": "Inter, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, sans-serif",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "lineHeight": "27.2px",
+          "letterSpacing": "normal",
+          "color": "rgb(228, 228, 231)",
+          "textTransform": "none"
+        },
+        "surface": {
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "backgroundImage": "linear-gradient(to right, rgba(0, 0, 0, 0) 0%, oklab(0.626994 0.147781 -0.219928 / 0.5) 50%, rgba(0, 0, 0, 0) 100%)",
+          "border": "0px solid rgb(228, 228, 231)",
+          "borderColor": "rgb(228, 228, 231)",
+          "borderWidth": "0px",
+          "borderRadius": "0px",
+          "boxShadow": "none",
+          "backdropFilter": "none",
+          "opacity": "0"
+        }
+      },
+      {
+        "tag": "div",
+        "id": "",
+        "className": "w-2/5 h-48 z-20 bg-(--card) border border-(--foreground)/10 border-b-0 rounded-t-xl p-3 md:p-5 flex flex-col justify-start shadow-[0_-5px_30px_rgba(0,0,0,0.3)] hover:shadow-[0_-5px_35px_rgba(168,85,247,0.5)] hover:border-purple-500/50 transition-colors duration-200 relative group/card overflow-hidden",
+        "rect": {
+          "width": 242.93280029296875,
+          "height": 182.39996337890625,
+          "top": 1018.7374877929688,
+          "left": 765.8464965820312
+        },
+        "box": {
+          "display": "flex",
+          "position": "relative",
+          "top": "0px",
+          "left": "0px",
+          "width": "255.719px",
+          "maxWidth": "none",
+          "minWidth": "auto",
+          "height": "192px",
+          "maxHeight": "none",
+          "padding": "20px",
+          "margin": "0px",
+          "gap": "normal",
+          "gridTemplateColumns": "none",
+          "gridTemplateRows": "none",
+          "flexDirection": "column",
+          "justifyContent": "flex-start",
+          "alignItems": "normal",
+          "zIndex": "20"
+        },
+        "typography": {
+          "fontFamily": "Inter, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, sans-serif",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "lineHeight": "27.2px",
+          "letterSpacing": "normal",
+          "color": "rgb(228, 228, 231)",
+          "textTransform": "none"
+        },
+        "surface": {
+          "backgroundColor": "rgb(24, 24, 27)",
+          "backgroundImage": "none",
+          "border": "",
+          "borderColor": "oklab(0.919723 0.0011749 -0.00385052 / 0.1)",
+          "borderWidth": "1px 1px 0px",
+          "borderRadius": "12px 12px 0px 0px",
+          "boxShadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.3) 0px -5px 30px 0px",
+          "backdropFilter": "none",
+          "opacity": "1"
+        }
+      },
+      {
+        "tag": "div",
+        "id": "",
+        "className": "absolute top-0 left-1/4 right-1/4 h-px bg-linear-to-r from-transparent via-purple-500/50 to-transparent opacity-100 md:opacity-0 md:group-hover/card:opacity-100 transition-opacity duration-300",
+        "rect": {
+          "width": 120.53125,
+          "height": 0.95001220703125,
+          "top": 1019.6875,
+          "left": 827.0472412109375
+        },
+        "box": {
+          "display": "block",
+          "position": "absolute",
+          "top": "0px",
+          "left": "63.4219px",
+          "width": "126.875px",
+          "maxWidth": "none",
+          "minWidth": "0px",
+          "height": "1px",
+          "maxHeight": "none",
+          "padding": "0px",
+          "margin": "0px",
+          "gap": "normal",
+          "gridTemplateColumns": "none",
+          "gridTemplateRows": "none",
+          "flexDirection": "row",
+          "justifyContent": "normal",
+          "alignItems": "normal",
+          "zIndex": "auto"
+        },
+        "typography": {
+          "fontFamily": "Inter, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, sans-serif",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "lineHeight": "27.2px",
+          "letterSpacing": "normal",
+          "color": "rgb(228, 228, 231)",
+          "textTransform": "none"
+        },
+        "surface": {
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "backgroundImage": "linear-gradient(to right, rgba(0, 0, 0, 0) 0%, oklab(0.626994 0.147781 -0.219928 / 0.5) 50%, rgba(0, 0, 0, 0) 100%)",
+          "border": "0px solid rgb(228, 228, 231)",
+          "borderColor": "rgb(228, 228, 231)",
+          "borderWidth": "0px",
+          "borderRadius": "0px",
+          "boxShadow": "none",
+          "backdropFilter": "none",
+          "opacity": "0"
+        }
+      },
+      {
+        "tag": "div",
+        "id": "",
+        "className": "w-1/3 h-44 -ml-6 z-10 bg-(--card) border border-(--foreground)/10 border-b-0 rounded-t-xl p-3 pl-6 md:p-4 flex flex-col justify-start text-right shadow-[0_-5px_30px_rgba(0,0,0,0.3)] hover:shadow-[0_-5px_35px_rgba(168,85,247,0.5)] hover:border-purple-500/50 transition-colors duration-200 relative group/card overflow-hidden",
+        "rect": {
+          "width": 202.4390869140625,
+          "height": 167.199951171875,
+          "top": 1033.9375,
+          "left": 985.979248046875
+        },
+        "box": {
+          "display": "flex",
+          "position": "relative",
+          "top": "0px",
+          "left": "0px",
+          "width": "213.094px",
+          "maxWidth": "none",
+          "minWidth": "auto",
+          "height": "176px",
+          "maxHeight": "none",
+          "padding": "16px",
+          "margin": "0px 0px 0px -24px",
+          "gap": "normal",
+          "gridTemplateColumns": "none",
+          "gridTemplateRows": "none",
+          "flexDirection": "column",
+          "justifyContent": "flex-start",
+          "alignItems": "normal",
+          "zIndex": "10"
+        },
+        "typography": {
+          "fontFamily": "Inter, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, sans-serif",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "lineHeight": "27.2px",
+          "letterSpacing": "normal",
+          "color": "rgb(228, 228, 231)",
+          "textTransform": "none"
+        },
+        "surface": {
+          "backgroundColor": "rgb(24, 24, 27)",
+          "backgroundImage": "none",
+          "border": "",
+          "borderColor": "oklab(0.919723 0.0011749 -0.00385052 / 0.1)",
+          "borderWidth": "1px 1px 0px",
+          "borderRadius": "12px 12px 0px 0px",
+          "boxShadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.3) 0px -5px 30px 0px",
+          "backdropFilter": "none",
+          "opacity": "1"
+        }
+      },
+      {
+        "tag": "div",
+        "id": "",
+        "className": "absolute top-0 left-1/4 right-1/4 h-px bg-linear-to-r from-transparent via-purple-500/50 to-transparent opacity-100 md:opacity-0 md:group-hover/card:opacity-100 transition-opacity duration-300",
+        "rect": {
+          "width": 100.2843017578125,
+          "height": 0.9500732421875,
+          "top": 1034.887451171875,
+          "left": 1037.056640625
+        },
+        "box": {
+          "display": "block",
+          "position": "absolute",
+          "top": "0px",
+          "left": "52.7656px",
+          "width": "105.562px",
+          "maxWidth": "none",
+          "minWidth": "0px",
+          "height": "1px",
+          "maxHeight": "none",
+          "padding": "0px",
+          "margin": "0px",
+          "gap": "normal",
+          "gridTemplateColumns": "none",
+          "gridTemplateRows": "none",
+          "flexDirection": "row",
+          "justifyContent": "normal",
+          "alignItems": "normal",
+          "zIndex": "auto"
+        },
+        "typography": {
+          "fontFamily": "Inter, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, sans-serif",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "lineHeight": "27.2px",
+          "letterSpacing": "normal",
+          "color": "rgb(228, 228, 231)",
+          "textTransform": "none"
+        },
+        "surface": {
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "backgroundImage": "linear-gradient(to right, rgba(0, 0, 0, 0) 0%, oklab(0.626994 0.147781 -0.219928 / 0.5) 50%, rgba(0, 0, 0, 0) 100%)",
+          "border": "0px solid rgb(228, 228, 231)",
+          "borderColor": "rgb(228, 228, 231)",
+          "borderWidth": "0px",
+          "borderRadius": "0px",
+          "boxShadow": "none",
+          "backdropFilter": "none",
+          "opacity": "0"
+        }
+      },
+      {
+        "tag": "div",
+        "id": "",
+        "className": "col-span-1 row-span-2 md:col-start-3 md:row-start-2 bg-linear-to-br from-(--card) to-(--card-border) border border-(--card-border) backdrop-blur-sm rounded-2xl flex flex-col justify-between group hover:shadow-lg hover:shadow-purple-500/10 transition-all duration-200 h-full w-full overflow-hidden",
+        "rect": {
+          "width": 306.5234375,
+          "height": 454.73828125,
+          "top": 1134.654296875,
+          "left": 901.39453125
+        },
+        "box": {
+          "display": "flex",
+          "position": "static",
+          "top": "auto",
+          "left": "auto",
+          "width": "322.656px",
+          "maxWidth": "none",
+          "minWidth": "auto",
+          "height": "478.672px",
+          "maxHeight": "none",
+          "padding": "0px",
+          "margin": "0px",
+          "gap": "normal",
+          "gridTemplateColumns": "none",
+          "gridTemplateRows": "none",
+          "flexDirection": "column",
+          "justifyContent": "space-between",
+          "alignItems": "normal",
+          "zIndex": "auto"
+        },
+        "typography": {
+          "fontFamily": "Inter, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, sans-serif",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "lineHeight": "27.2px",
+          "letterSpacing": "normal",
+          "color": "rgb(228, 228, 231)",
+          "textTransform": "none"
+        },
+        "surface": {
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "backgroundImage": "linear-gradient(to right bottom in oklab, rgb(24, 24, 27) 0%, rgb(39, 39, 42) 100%)",
+          "border": "1px solid rgb(39, 39, 42)",
+          "borderColor": "rgb(39, 39, 42)",
+          "borderWidth": "1px",
+          "borderRadius": "16px",
+          "boxShadow": "none",
+          "backdropFilter": "blur(8px)",
+          "opacity": "0"
+        }
+      },
+      {
+        "tag": "div",
+        "id": "",
+        "className": "h-0.5 w-8 bg-purple-500/50 rounded-full",
+        "rect": {
+          "width": 30.4000244140625,
+          "height": 1.9000244140625,
+          "top": 1193.732421875,
+          "left": 915.64453125
+        },
+        "box": {
+          "display": "block",
+          "position": "static",
+          "top": "auto",
+          "left": "auto",
+          "width": "32px",
+          "maxWidth": "none",
+          "minWidth": "0px",
+          "height": "2px",
+          "maxHeight": "none",
+          "padding": "0px",
+          "margin": "0px",
+          "gap": "normal",
+          "gridTemplateColumns": "none",
+          "gridTemplateRows": "none",
+          "flexDirection": "row",
+          "justifyContent": "normal",
+          "alignItems": "normal",
+          "zIndex": "auto"
+        },
+        "typography": {
+          "fontFamily": "Inter, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, sans-serif",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "lineHeight": "27.2px",
+          "letterSpacing": "normal",
+          "color": "rgb(228, 228, 231)",
+          "textTransform": "none"
+        },
+        "surface": {
+          "backgroundColor": "oklab(0.626994 0.147781 -0.219928 / 0.5)",
+          "backgroundImage": "none",
+          "border": "0px solid rgb(228, 228, 231)",
+          "borderColor": "rgb(228, 228, 231)",
+          "borderWidth": "0px",
+          "borderRadius": "3.35544e+07px",
+          "boxShadow": "none",
+          "backdropFilter": "none",
+          "opacity": "1"
+        }
+      },
+      {
+        "tag": "div",
+        "id": "",
+        "className": "relative w-full py-2 bg-(--card-border)/30 border-y border-(--card-border)/50 my-auto",
+        "rect": {
+          "width": 304.62347412109375,
+          "height": 31.632080078125,
+          "top": 1411.9652099609375,
+          "left": 902.3445434570312
+        },
+        "box": {
+          "display": "block",
+          "position": "relative",
+          "top": "0px",
+          "left": "0px",
+          "width": "320.656px",
+          "maxWidth": "none",
+          "minWidth": "auto",
+          "height": "33.2969px",
+          "maxHeight": "none",
+          "padding": "8px 0px",
+          "margin": "10.7188px 0px",
+          "gap": "normal",
+          "gridTemplateColumns": "none",
+          "gridTemplateRows": "none",
+          "flexDirection": "row",
+          "justifyContent": "normal",
+          "alignItems": "normal",
+          "zIndex": "auto"
+        },
+        "typography": {
+          "fontFamily": "Inter, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, sans-serif",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "lineHeight": "27.2px",
+          "letterSpacing": "normal",
+          "color": "rgb(228, 228, 231)",
+          "textTransform": "none"
+        },
+        "surface": {
+          "backgroundColor": "oklab(0.273934 0.00152507 -0.00525855 / 0.3)",
+          "backgroundImage": "none",
+          "border": "",
+          "borderColor": "oklab(0.273934 0.00152507 -0.00525855 / 0.5)",
+          "borderWidth": "1px 0px",
+          "borderRadius": "0px",
+          "boxShadow": "none",
+          "backdropFilter": "none",
+          "opacity": "1"
+        }
+      },
+      {
+        "tag": "div",
+        "id": "",
+        "className": "absolute left-0 top-0 bottom-0 w-6 bg-linear-to-r from-(--card) to-transparent z-10",
+        "rect": {
+          "width": 22.79998779296875,
+          "height": 29.73193359375,
+          "top": 1412.915283203125,
+          "left": 902.3445434570312
+        },
+        "box": {
+          "display": "block",
+          "position": "absolute",
+          "top": "0px",
+          "left": "0px",
+          "width": "24px",
+          "maxWidth": "none",
+          "minWidth": "0px",
+          "height": "31.2969px",
+          "maxHeight": "none",
+          "padding": "0px",
+          "margin": "0px",
+          "gap": "normal",
+          "gridTemplateColumns": "none",
+          "gridTemplateRows": "none",
+          "flexDirection": "row",
+          "justifyContent": "normal",
+          "alignItems": "normal",
+          "zIndex": "10"
+        },
+        "typography": {
+          "fontFamily": "Inter, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, sans-serif",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "lineHeight": "27.2px",
+          "letterSpacing": "normal",
+          "color": "rgb(228, 228, 231)",
+          "textTransform": "none"
+        },
+        "surface": {
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "backgroundImage": "linear-gradient(to right in oklab, rgb(24, 24, 27) 0%, rgba(0, 0, 0, 0) 100%)",
+          "border": "0px solid rgb(228, 228, 231)",
+          "borderColor": "rgb(228, 228, 231)",
+          "borderWidth": "0px",
+          "borderRadius": "0px",
+          "boxShadow": "none",
+          "backdropFilter": "none",
+          "opacity": "1"
+        }
+      }
+    ],
+    "projectsSection": {
+      "tag": "section",
+      "id": "projects",
+      "className": "pt-0 pb-36 sm:pb-48 md:pb-60 relative overflow-hidden",
+      "rect": {
+        "width": 1440,
+        "height": 1842.703125,
+        "top": 1714.359375,
+        "left": 0
+      },
+      "box": {
+        "display": "block",
+        "position": "relative",
+        "top": "0px",
+        "left": "0px",
+        "width": "1440px",
+        "maxWidth": "none",
+        "minWidth": "0px",
+        "height": "1842.7px",
+        "maxHeight": "none",
+        "padding": "0px 0px 240px",
+        "margin": "0px",
+        "gap": "normal",
+        "gridTemplateColumns": "none",
+        "gridTemplateRows": "none",
+        "flexDirection": "row",
+        "justifyContent": "normal",
+        "alignItems": "normal",
+        "zIndex": "auto"
+      },
+      "typography": {
+        "fontFamily": "Inter, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, sans-serif",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "lineHeight": "27.2px",
+        "letterSpacing": "normal",
+        "color": "rgb(228, 228, 231)",
+        "textTransform": "none"
+      },
+      "surface": {
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "backgroundImage": "none",
+        "border": "0px solid rgb(228, 228, 231)",
+        "borderColor": "rgb(228, 228, 231)",
+        "borderWidth": "0px",
+        "borderRadius": "0px",
+        "boxShadow": "none",
+        "backdropFilter": "none",
+        "opacity": "1"
+      }
+    },
+    "skillsSection": {
+      "tag": "section",
+      "id": "home",
+      "className": "relative min-h-screen flex items-center justify-center px-4",
+      "rect": {
+        "width": 1440,
+        "height": 951.6875,
+        "top": 0,
+        "left": 0
+      },
+      "box": {
+        "display": "flex",
+        "position": "relative",
+        "top": "0px",
+        "left": "0px",
+        "width": "1440px",
+        "maxWidth": "none",
+        "minWidth": "0px",
+        "height": "951.688px",
+        "maxHeight": "none",
+        "padding": "96px 16px 128px",
+        "margin": "0px",
+        "gap": "normal",
+        "gridTemplateColumns": "none",
+        "gridTemplateRows": "none",
+        "flexDirection": "row",
+        "justifyContent": "center",
+        "alignItems": "center",
+        "zIndex": "auto"
+      },
+      "typography": {
+        "fontFamily": "Inter, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, sans-serif",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "lineHeight": "27.2px",
+        "letterSpacing": "normal",
+        "color": "rgb(228, 228, 231)",
+        "textTransform": "none"
+      },
+      "surface": {
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "backgroundImage": "none",
+        "border": "0px solid rgb(228, 228, 231)",
+        "borderColor": "rgb(228, 228, 231)",
+        "borderWidth": "0px",
+        "borderRadius": "0px",
+        "boxShadow": "none",
+        "backdropFilter": "none",
+        "opacity": "1"
+      }
+    },
+    "exploreSection": {
+      "tag": "section",
+      "id": "other",
+      "className": "pt-0 pb-24 sm:pb-32 md:pb-40 relative overflow-hidden",
+      "rect": {
+        "width": 1440,
+        "height": 652.484375,
+        "top": 4477.046875,
+        "left": 0
+      },
+      "box": {
+        "display": "block",
+        "position": "relative",
+        "top": "0px",
+        "left": "0px",
+        "width": "1440px",
+        "maxWidth": "none",
+        "minWidth": "0px",
+        "height": "652.484px",
+        "maxHeight": "none",
+        "padding": "0px 0px 160px",
+        "margin": "0px",
+        "gap": "normal",
+        "gridTemplateColumns": "none",
+        "gridTemplateRows": "none",
+        "flexDirection": "row",
+        "justifyContent": "normal",
+        "alignItems": "normal",
+        "zIndex": "auto"
+      },
+      "typography": {
+        "fontFamily": "Inter, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, sans-serif",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "lineHeight": "27.2px",
+        "letterSpacing": "normal",
+        "color": "rgb(228, 228, 231)",
+        "textTransform": "none"
+      },
+      "surface": {
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "backgroundImage": "none",
+        "border": "0px solid rgb(228, 228, 231)",
+        "borderColor": "rgb(228, 228, 231)",
+        "borderWidth": "0px",
+        "borderRadius": "0px",
+        "boxShadow": "none",
+        "backdropFilter": "none",
+        "opacity": "1"
+      }
+    },
+    "footer": {
+      "tag": "footer",
+      "id": "",
+      "className": "flex flex-wrap gap-2 mt-4 shrink-0",
+      "rect": {
+        "width": 520,
+        "height": 27,
+        "top": 2598.359375,
+        "left": 160
+      },
+      "box": {
+        "display": "flex",
+        "position": "static",
+        "top": "auto",
+        "left": "auto",
+        "width": "520px",
+        "maxWidth": "none",
+        "minWidth": "auto",
+        "height": "27px",
+        "maxHeight": "none",
+        "padding": "0px",
+        "margin": "16px 0px 0px",
+        "gap": "8px",
+        "gridTemplateColumns": "none",
+        "gridTemplateRows": "none",
+        "flexDirection": "row",
+        "justifyContent": "normal",
+        "alignItems": "normal",
+        "zIndex": "auto"
+      },
+      "typography": {
+        "fontFamily": "Inter, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, sans-serif",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "lineHeight": "27.2px",
+        "letterSpacing": "normal",
+        "color": "rgb(228, 228, 231)",
+        "textTransform": "none"
+      },
+      "surface": {
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "backgroundImage": "none",
+        "border": "0px solid rgb(228, 228, 231)",
+        "borderColor": "rgb(228, 228, 231)",
+        "borderWidth": "0px",
+        "borderRadius": "0px",
+        "boxShadow": "none",
+        "backdropFilter": "none",
+        "opacity": "1"
+      }
+    }
+  },
+  "animations": {
+    "keyframes": [
+      {
+        "name": "shimmer-gradient",
+        "cssText": "@keyframes shimmer-gradient { \n  0% { background-position: 100% 0px, 0px 0px; }\n  100% { background-position: -100% 0px, 0px 0px; }\n}"
+      },
+      {
+        "name": "spin",
+        "cssText": "@keyframes spin { \n  100% { transform: rotate(360deg); }\n}"
+      },
+      {
+        "name": "ping",
+        "cssText": "@keyframes ping { \n  75%, 100% { opacity: 0; transform: scale(2); }\n}"
+      },
+      {
+        "name": "fadeIn",
+        "cssText": "@keyframes fadeIn { \n  0% { opacity: 0; }\n  100% { opacity: 1; }\n}"
+      },
+      {
+        "name": "fadeOut",
+        "cssText": "@keyframes fadeOut { \n  100% { opacity: 0; }\n}"
+      },
+      {
+        "name": "slideFromBottom",
+        "cssText": "@keyframes slideFromBottom { \n  0% { transform: translate3d(0,var(--initial-transform,100%),0); }\n  100% { transform: translate3d(0px, 0px, 0px); }\n}"
+      },
+      {
+        "name": "slideToBottom",
+        "cssText": "@keyframes slideToBottom { \n  100% { transform: translate3d(0,var(--initial-transform,100%),0); }\n}"
+      },
+      {
+        "name": "slideFromTop",
+        "cssText": "@keyframes slideFromTop { \n  0% { transform: translate3d(0,calc(var(--initial-transform,100%) * -1),0); }\n  100% { transform: translate3d(0px, 0px, 0px); }\n}"
+      },
+      {
+        "name": "slideToTop",
+        "cssText": "@keyframes slideToTop { \n  100% { transform: translate3d(0,calc(var(--initial-transform,100%) * -1),0); }\n}"
+      },
+      {
+        "name": "slideFromLeft",
+        "cssText": "@keyframes slideFromLeft { \n  0% { transform: translate3d(calc(var(--initial-transform,100%) * -1),0,0); }\n  100% { transform: translate3d(0px, 0px, 0px); }\n}"
+      },
+      {
+        "name": "slideToLeft",
+        "cssText": "@keyframes slideToLeft { \n  100% { transform: translate3d(calc(var(--initial-transform,100%) * -1),0,0); }\n}"
+      },
+      {
+        "name": "slideFromRight",
+        "cssText": "@keyframes slideFromRight { \n  0% { transform: translate3d(var(--initial-transform,100%),0,0); }\n  100% { transform: translate3d(0px, 0px, 0px); }\n}"
+      },
+      {
+        "name": "slideToRight",
+        "cssText": "@keyframes slideToRight { \n  100% { transform: translate3d(var(--initial-transform,100%),0,0); }\n}"
+      }
+    ],
+    "marquee": null,
+    "cursor": "<button class=\"relative w-14 h-14 rounded-full glass-strong flex items-center justify-center transition-transform duration-300 hover:scale-105 active:scale-95 cursor-pointer\" aria-label=\"Toggle theme\" style=\"box-shadow: var(--shadow-elevation-low);\"><div class=\"absolute\" style=\"opacity: 1; transform: none;\"><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"20\" height=\"20\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-moon text-white\" aria-hidden=\"true\"><path d=\"M20.985 12.486a9 9 0 1 1-9.473-9.472c.405-.022.617.46.402.803a6 6 0 0 0 8.268 8.268c.344-.215.825-.004.803.401\"></path></svg></div><div class=\"absolute\" style=\"opacity: 0; transform: scale(0) rotate(-180deg);\"><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"20\" height=\"20\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-sun text-amber-500\" aria-hidden=\"true\"><circle cx=\"12\" cy=\"12\" r=\"4\"></circle><path d=\"M12 2v2\"></path><path d=\"M12 20v2\"></path><path d=\"m4.93 4.93 1.41 1.41\"></path><path d=\"m17.66 17.66 1.41 1.41\"></path><path d=\"M2 12h2\"></path><path d=\"M20 12h2\"></path><path d=\"m6.34 17.66-1.41 1.41\"></path><path d=\"m19.07 4.93-1.41 1.41\"></path></svg></div></button>"
+  },
+  "breakpoints": {
+    "390": {
+      "viewportWidth": 390,
+      "navbarDisplay": "block",
+      "navbarHeight": "50px",
+      "bentoGridColumns": "none",
+      "bentoDisplay": "block",
+      "heroH1FontSize": "32px",
+      "heroH1LineHeight": "35.2px"
+    },
+    "768": {
+      "viewportWidth": 768,
+      "navbarDisplay": "block",
+      "navbarHeight": "50px",
+      "bentoGridColumns": "none",
+      "bentoDisplay": "block",
+      "heroH1FontSize": "32px",
+      "heroH1LineHeight": "35.2px"
+    },
+    "1024": {
+      "viewportWidth": 1024,
+      "navbarDisplay": "block",
+      "navbarHeight": "56px",
+      "bentoGridColumns": "none",
+      "bentoDisplay": "block",
+      "heroH1FontSize": "32px",
+      "heroH1LineHeight": "35.2px"
+    },
+    "1440": {
+      "viewportWidth": 1440,
+      "navbarDisplay": "block",
+      "navbarHeight": "56px",
+      "bentoGridColumns": "none",
+      "bentoDisplay": "block",
+      "heroH1FontSize": "32px",
+      "heroH1LineHeight": "35.2px"
+    }
+  },
+  "interactive": {
+    "askInput": null,
+    "chips": [
+      {
+        "text": "Work",
+        "className": "text-xs rounded-full border px-3 py-1 transition-transform disabled:opacity-50 hover:border-[var(--accent)] hover:text-[var(--foreground)] active:scale-95",
+        "tag": "button"
+      },
+      {
+        "text": "About me",
+        "className": "text-xs rounded-full border px-3 py-1 transition-transform disabled:opacity-50 hover:border-[var(--accent)] hover:text-[var(--foreground)] active:scale-95",
+        "tag": "button"
+      },
+      {
+        "text": "Skills",
+        "className": "text-xs rounded-full border px-3 py-1 transition-transform disabled:opacity-50 hover:border-[var(--accent)] hover:text-[var(--foreground)] active:scale-95",
+        "tag": "button"
+      },
+      {
+        "text": "Contact",
+        "className": "text-xs rounded-full border px-3 py-1 transition-transform disabled:opacity-50 hover:border-[var(--accent)] hover:text-[var(--foreground)] active:scale-95",
+        "tag": "button"
+      }
+    ],
+    "unlockBanner": null,
+    "localStorageData": {
+      "nextauth.message": "{\"event\":\"session\",\"data\":{\"trigger\":\"getSession\"},\"timestamp\":1790599872}"
+    },
+    "cookieData": ""
+  },
+  "routes": {
+    "guestbook": {
+      "title": "Guestbook | Paweł Szostak",
+      "heading": "Leave Your Mark",
+      "hasForm": false,
+      "inputs": [],
+      "entriesCount": 31,
+      "sampleEntries": [
+        "Sign in to pin your message to this board forever.Sign in with GitHubSign in with Google",
+        "Sign in with GitHub",
+        "Sign in with Google",
+        "Tinhinane GoumidiSep 11 • 16 d agohey",
+        "Tahsin MorsalinSep 7 • 21 d agonice portfolio i love it"
+      ],
+      "htmlPreview": "<div class=\"guestbook-noise absolute inset-0 opacity-[0.03] pointer-events-none\"></div><div class=\"absolute inset-0 bg-linear-to-b from-violet-500/5 via-transparent to-transparent pointer-events-none\"></div><div class=\"max-w-4xl mx-auto relative z-10\"><button class=\"flex items-center gap-2 text-(--muted) hover:text-(--foreground) transition-colors mb-8 group\" style=\"opacity: 1; transform: none;\"><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"20\" height=\"20\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-arrow-left group-hover:-translate-x-1 transition-transform\" aria-hidden=\"true\"><path d=\"m12 19-7-7 7-7\"></path><path d=\"M19 12H5\"></path></svg><span>Back to home</span></button><div class=\"text-center mb-12\" style=\"opacity: 1; transform: none;\"><span class=\"inline-block text-sm font-semibold tracking-widest text-violet-500 uppercase mb-4\">The Community Wall</span><h1 class=\"text-4xl sm:text-5xl m"
+    },
+    "achievements": {
+      "title": "Achievements | Paweł Szostak",
+      "heading": "My Achievements",
+      "cardsCount": 15,
+      "cards": [
+        "Google AI ProgramCompleted Google's 5-week intensive AI training program. Mastered foundational concepts in AI & how to integrate it into business.",
+        "",
+        "Google AI ProgramCompleted Google's 5-week intensive AI training program. Mastered foundational concepts in AI & how to integrate it into business.",
+        "",
+        "Cassini Hackathon",
+        "",
+        "",
+        "Half-Marathon Finisher",
+        "",
+        "",
+        "Alpine Freeride",
+        "",
+        "",
+        "Weighted Handstand Push-Up",
+        ""
+      ],
+      "htmlPreview": "<div class=\"absolute inset-0 bg-[url('/noise.png')] opacity-[0.03] mix-blend-overlay pointer-events-none\"></div><div class=\"absolute inset-0 bg-linear-to-b from-amber-500/5 via-transparent to-transparent pointer-events-none\"></div><div class=\"max-w-5xl mx-auto relative z-10\"><button class=\"flex items-center gap-2 text-(--muted) hover:text-(--foreground) transition-colors mb-6 sm:mb-8 group\" style=\"opacity: 1; transform: none;\"><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"18\" height=\"18\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-arrow-left sm:w-5 sm:h-5 group-hover:-translate-x-1 transition-transform\" aria-hidden=\"true\"><path d=\"m12 19-7-7 7-7\"></path><path d=\"M19 12H5\"></path></svg><span class=\"text-sm sm:text-base\">Back to home</span></button><div class=\"text-center mb-8 sm:mb-10 md:mb-12\" style=\"opacity: 1; transform: none;\"><span class=\"inline-block text-xs sm:text-sm font-semibold tra"
+    },
+    "links": {
+      "title": "My Links | Paweł Szostak",
+      "heading": "My Links",
+      "links": [
+        {
+          "href": "https://github.com/Szostak21",
+          "text": "GitHub"
+        },
+        {
+          "href": "https://www.linkedin.com/in/pawe%C5%82-szostak-0867703a8/",
+          "text": "LinkedIn"
+        },
+        {
+          "href": "mailto:pszostak.contact@gmail.com",
+          "text": "Email"
+        }
+      ],
+      "htmlPreview": "<div class=\"absolute inset-0 bg-[url('/noise.png')] opacity-[0.03] mix-blend-overlay pointer-events-none\"></div><div class=\"absolute inset-0 bg-linear-to-b from-blue-500/5 via-transparent to-transparent pointer-events-none\"></div><div class=\"max-w-4xl mx-auto relative z-10\"><button class=\"flex items-center gap-2 text-(--muted) hover:text-(--foreground) transition-colors mb-6 sm:mb-8 group\" style=\"opacity: 1; transform: none;\"><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"18\" height=\"18\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-arrow-left sm:w-5 sm:h-5 group-hover:-translate-x-1 transition-transform\" aria-hidden=\"true\"><path d=\"m12 19-7-7 7-7\"></path><path d=\"M19 12H5\"></path></svg><span class=\"text-sm sm:text-base\">Back to home</span></button><div class=\"text-center mb-8 sm:mb-10 md:mb-12\" style=\"opacity: 1; transform: none;\"><span class=\"inline-block text-xs sm:text-sm font-semibold trac"
+    }
+  },
+  "networkLogs": [
+    {
+      "url": "https://www.pszostak.pl/",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.pszostak.pl/_next/static/chunks/80b5b74f08eefa3b.css",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.pszostak.pl/_next/image?url=%2Fabout%2Fportrait.jpg&w=1920&q=75",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.pszostak.pl/_next/image?url=%2Fabout%2Fcalisthenics.jpg&w=384&q=75",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.pszostak.pl/_next/image?url=%2Fabout%2Fportrait.jpg&w=640&q=75",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.pszostak.pl/_next/image?url=%2Fprojects%2Fcube_solver.png&w=750&q=75",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.pszostak.pl/_next/static/chunks/7c1a3a69a1898353.js",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.pszostak.pl/_next/static/chunks/fcf832ee1df2b367.js",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.pszostak.pl/_next/static/chunks/8edcb5623dc16937.js",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.pszostak.pl/_next/static/chunks/37154119f418f3cd.js",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.pszostak.pl/_next/static/chunks/99ef9b6b7d706c4a.js",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.pszostak.pl/_next/static/chunks/e2738ebe4e2bdd11.js",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.pszostak.pl/_next/static/chunks/0bfe6fe2f07605f9.js",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.pszostak.pl/_next/static/chunks/turbopack-5457d55392acd872.js",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.pszostak.pl/_next/static/chunks/721812daa71cadcb.js",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.pszostak.pl/_next/static/chunks/922c1bbf58eab76b.js",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.pszostak.pl/_next/static/chunks/7ed3d4cbc9abfe9b.js",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.pszostak.pl/_next/static/chunks/0d8a1a71f2482b26.js",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.pszostak.pl/_next/static/chunks/turbopack-09ccba78dec047d7.js",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.pszostak.pl/_next/static/J568UVX60ceyhTP1KTQjv/_ssgManifest.js",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.pszostak.pl/_next/static/J568UVX60ceyhTP1KTQjv/_buildManifest.js",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.pszostak.pl/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.pszostak.pl/_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1524661135-423995f22d0b%3Fq%3D80%26w%3D1748%26auto%3Dformat%26fit%3Dcrop&w=640&q=75",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.pszostak.pl/_next/image?url=%2Fabout%2Frun.jpg&w=384&q=75",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.pszostak.pl/_next/image?url=%2Fabout%2Fkickboxing.jpg&w=384&q=75",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.pszostak.pl/_next/static/J568UVX60ceyhTP1KTQjv/_clientMiddlewareManifest.json",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.pszostak.pl/_next/static/chunks/a70fe02ecd71244c.js",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.pszostak.pl/_next/static/chunks/1fc7e73c66ed7c86.js",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.pszostak.pl/api/auth/session",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.pszostak.pl/about/portrait.jpg",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.pszostak.pl/about/agh.jpg",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.pszostak.pl/about/team.jpg",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.pszostak.pl/about/city.jpg",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.pszostak.pl/about/hobby.jpg",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.pszostak.pl/4806c8f2f9a24b2f/script.js",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.pszostak.pl/avatar.webm",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.pszostak.pl/avatar.webm",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.pszostak.pl/api/source-unlock/verify",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.pszostak.pl/cdn-cgi/rum?",
+      "method": "POST",
+      "postData": "{\"startTime\":1790599861350,\"pageloadId\":\"fc951635-a3cf-4faf-b77b-8e5902919bb9\",\"eventType\":1,\"nt\":\"navigate\",\"location\":\"https://www.pszostak.pl/\",\"versions\":{\"fl\":\"2024.11.0\",\"js\":\"2026.9.1\",\"timings\":2},\"bi\":{\"be\":\"Blink\",\"bev\":\"120\",\"bv\":\"120\",\"ov\":\"10\"},\"memory\":{\"totalJSHeapSize\":17795674,\"usedJSHeapSize\":12859090,\"jsHeapSizeLimit\":4242538496},\"firstPaint\":10048,\"firstContentfulPaint\":10868,\"timingsV2\":{\"nextHopProtocol\":\"h2\",\"domainLookupStart\":4,\"domainLookupEnd\":4463,\"connectStart\":4463,\"connectEnd\":4741,\"secureConnectionStart\":4518,\"requestStart\":4741,\"responseStart\":9086,\"responseEnd\":9088,\"domInteractive\":10046,\"domComplete\":22915,\"loadEventStart\":22916,\"loadEventEnd\":22916,\"finalResponseHeadersStart\":9086,\"firstInterimResponseStart\":0,\"transferSize\":18001,\"decodedBodySize\":110803},\"siteToken\":\"3f2b8c95b048465ea9ffc7c13418d60d\",\"st\":2}"
+    },
+    {
+      "url": "https://www.pszostak.pl/api/chat",
+      "method": "POST",
+      "postData": "{\"id\":\"CE9qnDpx959Q6a4u\",\"messages\":[{\"parts\":[{\"type\":\"text\",\"text\":\"What do you do and how can you help me?\"}],\"id\":\"h8pv319Jq2OwbVVg\",\"role\":\"user\"}],\"trigger\":\"submit-message\"}"
+    },
+    {
+      "url": "https://www.pszostak.pl/",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.pszostak.pl/_next/static/chunks/80b5b74f08eefa3b.css",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.pszostak.pl/_next/image?url=%2Fabout%2Fportrait.jpg&w=1920&q=75",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.pszostak.pl/_next/image?url=%2Fabout%2Fcalisthenics.jpg&w=384&q=75",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.pszostak.pl/_next/image?url=%2Fabout%2Fportrait.jpg&w=640&q=75",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.pszostak.pl/_next/image?url=%2Fprojects%2Fcube_solver.png&w=750&q=75",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.pszostak.pl/_next/static/chunks/7c1a3a69a1898353.js",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.pszostak.pl/_next/static/chunks/fcf832ee1df2b367.js",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.pszostak.pl/_next/static/chunks/8edcb5623dc16937.js",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.pszostak.pl/_next/static/chunks/37154119f418f3cd.js",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.pszostak.pl/_next/static/chunks/99ef9b6b7d706c4a.js",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.pszostak.pl/_next/static/chunks/e2738ebe4e2bdd11.js",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.pszostak.pl/_next/static/chunks/0bfe6fe2f07605f9.js",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.pszostak.pl/_next/static/chunks/turbopack-5457d55392acd872.js",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.pszostak.pl/_next/static/chunks/721812daa71cadcb.js",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.pszostak.pl/_next/static/chunks/922c1bbf58eab76b.js",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.pszostak.pl/_next/static/chunks/7ed3d4cbc9abfe9b.js",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.pszostak.pl/_next/static/chunks/0d8a1a71f2482b26.js",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.pszostak.pl/_next/static/chunks/turbopack-09ccba78dec047d7.js",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.pszostak.pl/_next/static/J568UVX60ceyhTP1KTQjv/_ssgManifest.js",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.pszostak.pl/_next/static/J568UVX60ceyhTP1KTQjv/_buildManifest.js",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.pszostak.pl/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.pszostak.pl/_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1524661135-423995f22d0b%3Fq%3D80%26w%3D1748%26auto%3Dformat%26fit%3Dcrop&w=640&q=75",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.pszostak.pl/_next/image?url=%2Fabout%2Frun.jpg&w=384&q=75",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.pszostak.pl/_next/image?url=%2Fabout%2Fkickboxing.jpg&w=384&q=75",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.pszostak.pl/_next/static/J568UVX60ceyhTP1KTQjv/_clientMiddlewareManifest.json",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.pszostak.pl/_next/image?url=%2Fprojects%2Ftree_2.png&w=384&q=75",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.pszostak.pl/_next/image?url=%2Fprojects%2Ftree_3.png&w=384&q=75",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.pszostak.pl/_next/image?url=%2Fprojects%2Ftree_1.png&w=640&q=75",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.pszostak.pl/_next/image?url=%2Fprojects%2Fnebula.png&w=750&q=75",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.pszostak.pl/_next/image?url=%2Fprojects%2Fguess_who_2.jpg&w=384&q=75",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.pszostak.pl/_next/image?url=%2Fprojects%2Fguess_who_3.jpg&w=384&q=75",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.pszostak.pl/_next/image?url=%2Fprojects%2Fguess_who_1.jpg&w=640&q=75",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.pszostak.pl/cdn-cgi/rum?",
+      "method": "POST",
+      "postData": "{\"startTime\":1790599889587,\"pageloadId\":\"7bbbbca5-2b46-40a4-b65f-d1d2bbb28369\",\"eventType\":1,\"nt\":\"navigate\",\"location\":\"https://www.pszostak.pl/\",\"versions\":{\"fl\":\"2024.11.0\",\"js\":\"2026.9.1\",\"timings\":2},\"bi\":{\"be\":\"Blink\",\"bev\":\"120\",\"bv\":\"120\",\"ov\":\"10\"},\"memory\":{\"totalJSHeapSize\":21116360,\"usedJSHeapSize\":17239900,\"jsHeapSizeLimit\":4242538496},\"firstPaint\":844,\"firstContentfulPaint\":0,\"timingsV2\":{\"nextHopProtocol\":\"h2\",\"domainLookupStart\":2,\"domainLookupEnd\":2,\"connectStart\":2,\"connectEnd\":2,\"secureConnectionStart\":2,\"requestStart\":4,\"responseStart\":708,\"responseEnd\":761,\"domInteractive\":789,\"domComplete\":998,\"loadEventStart\":998,\"loadEventEnd\":998,\"finalResponseHeadersStart\":708,\"firstInterimResponseStart\":0,\"transferSize\":17998,\"decodedBodySize\":110803},\"siteToken\":\"3f2b8c95b048465ea9ffc7c13418d60d\",\"st\":2}"
+    },
+    {
+      "url": "https://www.pszostak.pl/_next/static/chunks/a70fe02ecd71244c.js",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.pszostak.pl/_next/static/chunks/1fc7e73c66ed7c86.js",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.pszostak.pl/api/auth/session",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.pszostak.pl/about/portrait.jpg",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.pszostak.pl/about/agh.jpg",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.pszostak.pl/about/team.jpg",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.pszostak.pl/about/city.jpg",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.pszostak.pl/about/hobby.jpg",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.pszostak.pl/4806c8f2f9a24b2f/script.js",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.pszostak.pl/avatar.webm",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.pszostak.pl/api/source-unlock/verify",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.pszostak.pl/",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.pszostak.pl/_next/image?url=%2Fabout%2Fsnowboarding.jpg&w=256&q=75",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.pszostak.pl/_next/image?url=%2Fabout%2Fkickboxing.jpg&w=256&q=75",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.pszostak.pl/_next/static/chunks/80b5b74f08eefa3b.css",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.pszostak.pl/_next/image?url=%2Fabout%2Fportrait.jpg&w=1080&q=75",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.pszostak.pl/_next/image?url=%2Fabout%2Fcalisthenics.jpg&w=256&q=75",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.pszostak.pl/_next/image?url=%2Fabout%2Fportrait.jpg&w=384&q=75",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.pszostak.pl/_next/image?url=%2Fprojects%2Fcube_solver.png&w=640&q=75",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.pszostak.pl/_next/static/chunks/7c1a3a69a1898353.js",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.pszostak.pl/_next/static/chunks/fcf832ee1df2b367.js",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.pszostak.pl/_next/static/chunks/8edcb5623dc16937.js",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.pszostak.pl/_next/static/chunks/37154119f418f3cd.js",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.pszostak.pl/_next/static/chunks/99ef9b6b7d706c4a.js",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.pszostak.pl/_next/static/chunks/e2738ebe4e2bdd11.js",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.pszostak.pl/_next/static/chunks/0bfe6fe2f07605f9.js",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.pszostak.pl/_next/static/chunks/turbopack-5457d55392acd872.js",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.pszostak.pl/_next/static/chunks/721812daa71cadcb.js",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.pszostak.pl/_next/static/chunks/922c1bbf58eab76b.js",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.pszostak.pl/_next/static/chunks/7ed3d4cbc9abfe9b.js",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.pszostak.pl/_next/static/chunks/0d8a1a71f2482b26.js",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.pszostak.pl/_next/static/chunks/turbopack-09ccba78dec047d7.js",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.pszostak.pl/_next/static/J568UVX60ceyhTP1KTQjv/_ssgManifest.js",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.pszostak.pl/_next/static/J568UVX60ceyhTP1KTQjv/_buildManifest.js",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.pszostak.pl/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.pszostak.pl/_next/image?url=%2Fabout%2Fportrait.jpg&w=1920&q=75",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.pszostak.pl/_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1524661135-423995f22d0b%3Fq%3D80%26w%3D1748%26auto%3Dformat%26fit%3Dcrop&w=640&q=75",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.pszostak.pl/_next/image?url=%2Fabout%2Fcalisthenics.jpg&w=384&q=75",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.pszostak.pl/_next/image?url=%2Fprojects%2Fcube_solver.png&w=750&q=75",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.pszostak.pl/_next/image?url=%2Fabout%2Frun.jpg&w=256&q=75",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.pszostak.pl/_next/image?url=%2Fabout%2Fkickboxing.jpg&w=256&q=75",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.pszostak.pl/_next/image?url=%2Fprojects%2Ftree_2.png&w=256&q=75",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.pszostak.pl/_next/image?url=%2Fprojects%2Ftree_3.png&w=256&q=75",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.pszostak.pl/_next/image?url=%2Fprojects%2Ftree_1.png&w=384&q=75",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.pszostak.pl/_next/image?url=%2Fprojects%2Fnebula.png&w=640&q=75",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.pszostak.pl/_next/image?url=%2Fprojects%2Fguess_who_2.jpg&w=256&q=75",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.pszostak.pl/_next/image?url=%2Fprojects%2Fguess_who_3.jpg&w=256&q=75",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.pszostak.pl/_next/image?url=%2Fprojects%2Fguess_who_1.jpg&w=384&q=75",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.pszostak.pl/_next/static/J568UVX60ceyhTP1KTQjv/_clientMiddlewareManifest.json",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.pszostak.pl/cdn-cgi/rum?",
+      "method": "POST",
+      "postData": "{\"startTime\":1790599899563,\"pageloadId\":\"6bd0e996-a36b-4976-b897-781fdf2dbe04\",\"eventType\":1,\"nt\":\"navigate\",\"location\":\"https://www.pszostak.pl/\",\"versions\":{\"fl\":\"2024.11.0\",\"js\":\"2026.9.1\",\"timings\":2},\"bi\":{\"be\":\"Blink\",\"bev\":\"120\",\"bv\":\"120\",\"ov\":\"10\"},\"memory\":{\"totalJSHeapSize\":36907376,\"usedJSHeapSize\":21833696,\"jsHeapSizeLimit\":4242538496},\"firstPaint\":1788,\"firstContentfulPaint\":0,\"timingsV2\":{\"nextHopProtocol\":\"h2\",\"domainLookupStart\":1,\"domainLookupEnd\":1,\"connectStart\":1,\"connectEnd\":1,\"secureConnectionStart\":1,\"requestStart\":3,\"responseStart\":1636,\"responseEnd\":1648,\"domInteractive\":1684,\"domComplete\":2627,\"loadEventStart\":2627,\"loadEventEnd\":2627,\"finalResponseHeadersStart\":1636,\"firstInterimResponseStart\":0,\"transferSize\":17999,\"decodedBodySize\":110803},\"siteToken\":\"3f2b8c95b048465ea9ffc7c13418d60d\",\"st\":2}"
+    },
+    {
+      "url": "https://www.pszostak.pl/_next/static/chunks/a70fe02ecd71244c.js",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.pszostak.pl/_next/static/chunks/1fc7e73c66ed7c86.js",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.pszostak.pl/api/auth/session",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.pszostak.pl/about/portrait.jpg",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.pszostak.pl/about/agh.jpg",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.pszostak.pl/about/team.jpg",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.pszostak.pl/about/city.jpg",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.pszostak.pl/about/hobby.jpg",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.pszostak.pl/4806c8f2f9a24b2f/script.js",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.pszostak.pl/avatar.webm",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.pszostak.pl/api/source-unlock/verify",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.pszostak.pl/",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.pszostak.pl/_next/image?url=%2Fprojects%2Fnebula.png&w=750&q=75",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.pszostak.pl/_next/static/chunks/80b5b74f08eefa3b.css",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.pszostak.pl/_next/image?url=%2Fabout%2Fportrait.jpg&w=384&q=75",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.pszostak.pl/_next/image?url=%2Fabout%2Fcalisthenics.jpg&w=384&q=75",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.pszostak.pl/_next/image?url=%2Fabout%2Fportrait.jpg&w=256&q=75",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.pszostak.pl/_next/image?url=%2Fprojects%2Fcube_solver.png&w=750&q=75",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.pszostak.pl/_next/static/chunks/7c1a3a69a1898353.js",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.pszostak.pl/_next/static/chunks/fcf832ee1df2b367.js",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.pszostak.pl/_next/static/chunks/8edcb5623dc16937.js",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.pszostak.pl/_next/static/chunks/37154119f418f3cd.js",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.pszostak.pl/_next/static/chunks/99ef9b6b7d706c4a.js",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.pszostak.pl/_next/static/chunks/e2738ebe4e2bdd11.js",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.pszostak.pl/_next/static/chunks/0bfe6fe2f07605f9.js",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.pszostak.pl/_next/static/chunks/turbopack-5457d55392acd872.js",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.pszostak.pl/_next/static/chunks/721812daa71cadcb.js",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.pszostak.pl/_next/static/chunks/922c1bbf58eab76b.js",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.pszostak.pl/_next/static/chunks/7ed3d4cbc9abfe9b.js",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.pszostak.pl/_next/static/chunks/0d8a1a71f2482b26.js",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.pszostak.pl/_next/static/chunks/turbopack-09ccba78dec047d7.js",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.pszostak.pl/_next/static/J568UVX60ceyhTP1KTQjv/_ssgManifest.js",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.pszostak.pl/_next/static/J568UVX60ceyhTP1KTQjv/_buildManifest.js",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.pszostak.pl/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.pszostak.pl/_next/image?url=%2Fabout%2Fportrait.jpg&w=1920&q=75",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.pszostak.pl/_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1524661135-423995f22d0b%3Fq%3D80%26w%3D1748%26auto%3Dformat%26fit%3Dcrop&w=640&q=75",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.pszostak.pl/_next/image?url=%2Fabout%2Frun.jpg&w=256&q=75",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.pszostak.pl/_next/image?url=%2Fabout%2Fkickboxing.jpg&w=256&q=75",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.pszostak.pl/_next/image?url=%2Fprojects%2Ftree_2.png&w=256&q=75",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.pszostak.pl/_next/image?url=%2Fprojects%2Ftree_3.png&w=256&q=75",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.pszostak.pl/_next/image?url=%2Fprojects%2Ftree_1.png&w=384&q=75",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.pszostak.pl/_next/image?url=%2Fprojects%2Fnebula.png&w=750&q=75",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.pszostak.pl/_next/image?url=%2Fprojects%2Fguess_who_2.jpg&w=256&q=75",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.pszostak.pl/_next/image?url=%2Fprojects%2Fguess_who_3.jpg&w=256&q=75",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.pszostak.pl/_next/image?url=%2Fprojects%2Fguess_who_1.jpg&w=384&q=75",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.pszostak.pl/_next/static/J568UVX60ceyhTP1KTQjv/_clientMiddlewareManifest.json",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.pszostak.pl/_next/static/chunks/a70fe02ecd71244c.js",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.pszostak.pl/_next/static/chunks/1fc7e73c66ed7c86.js",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.pszostak.pl/api/auth/session",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.pszostak.pl/about/portrait.jpg",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.pszostak.pl/about/agh.jpg",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.pszostak.pl/about/team.jpg",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.pszostak.pl/about/city.jpg",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.pszostak.pl/about/hobby.jpg",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.pszostak.pl/4806c8f2f9a24b2f/script.js",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.pszostak.pl/avatar.webm",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.pszostak.pl/api/source-unlock/verify",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.pszostak.pl/cdn-cgi/rum?",
+      "method": "POST",
+      "postData": "{\"startTime\":1790599910698,\"pageloadId\":\"37d942d0-4ec3-448f-94b1-16dc009431b7\",\"eventType\":1,\"nt\":\"navigate\",\"location\":\"https://www.pszostak.pl/\",\"versions\":{\"fl\":\"2024.11.0\",\"js\":\"2026.9.1\",\"timings\":2},\"bi\":{\"be\":\"Blink\",\"bev\":\"120\",\"bv\":\"120\",\"ov\":\"10\"},\"memory\":{\"totalJSHeapSize\":53879880,\"usedJSHeapSize\":23357076,\"jsHeapSizeLimit\":4242538496},\"firstPaint\":1428,\"firstContentfulPaint\":1832,\"timingsV2\":{\"nextHopProtocol\":\"h2\",\"domainLookupStart\":1,\"domainLookupEnd\":1,\"connectStart\":1,\"connectEnd\":1,\"secureConnectionStart\":1,\"requestStart\":2,\"responseStart\":681,\"responseEnd\":1376,\"domInteractive\":1392,\"domComplete\":5301,\"loadEventStart\":5302,\"loadEventEnd\":5302,\"finalResponseHeadersStart\":681,\"firstInterimResponseStart\":0,\"transferSize\":17999,\"decodedBodySize\":110803},\"siteToken\":\"3f2b8c95b048465ea9ffc7c13418d60d\",\"st\":2}"
+    },
+    {
+      "url": "https://www.pszostak.pl/",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.pszostak.pl/_next/image?url=%2Fabout%2Fhobby.jpg&w=384&q=75",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.pszostak.pl/_next/static/chunks/80b5b74f08eefa3b.css",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.pszostak.pl/_next/image?url=%2Fabout%2Fportrait.jpg&w=384&q=75",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.pszostak.pl/_next/image?url=%2Fabout%2Fcalisthenics.jpg&w=256&q=75",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.pszostak.pl/_next/image?url=%2Fabout%2Fportrait.jpg&w=640&q=75",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.pszostak.pl/_next/image?url=%2Fprojects%2Fcube_solver.png&w=384&q=75",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.pszostak.pl/_next/static/chunks/7c1a3a69a1898353.js",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.pszostak.pl/_next/static/chunks/fcf832ee1df2b367.js",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.pszostak.pl/_next/static/chunks/8edcb5623dc16937.js",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.pszostak.pl/_next/static/chunks/37154119f418f3cd.js",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.pszostak.pl/_next/static/chunks/99ef9b6b7d706c4a.js",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.pszostak.pl/_next/static/chunks/e2738ebe4e2bdd11.js",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.pszostak.pl/_next/static/chunks/0bfe6fe2f07605f9.js",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.pszostak.pl/_next/static/chunks/turbopack-5457d55392acd872.js",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.pszostak.pl/_next/static/chunks/721812daa71cadcb.js",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.pszostak.pl/_next/static/chunks/922c1bbf58eab76b.js",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.pszostak.pl/_next/static/chunks/7ed3d4cbc9abfe9b.js",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.pszostak.pl/_next/static/chunks/0d8a1a71f2482b26.js",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.pszostak.pl/_next/static/chunks/turbopack-09ccba78dec047d7.js",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.pszostak.pl/_next/static/J568UVX60ceyhTP1KTQjv/_ssgManifest.js",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.pszostak.pl/_next/static/J568UVX60ceyhTP1KTQjv/_buildManifest.js",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.pszostak.pl/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.pszostak.pl/_next/image?url=%2Fabout%2Fportrait.jpg&w=1920&q=75",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.pszostak.pl/_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1524661135-423995f22d0b%3Fq%3D80%26w%3D1748%26auto%3Dformat%26fit%3Dcrop&w=640&q=75",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.pszostak.pl/_next/image?url=%2Fabout%2Fcalisthenics.jpg&w=384&q=75",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.pszostak.pl/_next/image?url=%2Fabout%2Fhobby.jpg&w=384&q=75",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.pszostak.pl/_next/image?url=%2Fprojects%2Fcube_solver.png&w=750&q=75",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.pszostak.pl/_next/image?url=%2Fabout%2Frun.jpg&w=128&q=75",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.pszostak.pl/_next/image?url=%2Fabout%2Fkickboxing.jpg&w=128&q=75",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.pszostak.pl/_next/image?url=%2Fprojects%2Ftree_2.png&w=128&q=75",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.pszostak.pl/_next/image?url=%2Fprojects%2Ftree_3.png&w=128&q=75",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.pszostak.pl/_next/image?url=%2Fprojects%2Ftree_1.png&w=256&q=75",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.pszostak.pl/_next/image?url=%2Fprojects%2Fnebula.png&w=384&q=75",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.pszostak.pl/_next/image?url=%2Fprojects%2Fguess_who_2.jpg&w=128&q=75",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.pszostak.pl/_next/image?url=%2Fprojects%2Fguess_who_3.jpg&w=128&q=75",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.pszostak.pl/_next/image?url=%2Fprojects%2Fguess_who_1.jpg&w=256&q=75",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.pszostak.pl/_next/static/J568UVX60ceyhTP1KTQjv/_clientMiddlewareManifest.json",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.pszostak.pl/_next/static/chunks/a70fe02ecd71244c.js",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.pszostak.pl/_next/static/chunks/1fc7e73c66ed7c86.js",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.pszostak.pl/api/auth/session",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.pszostak.pl/about/portrait.jpg",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.pszostak.pl/about/agh.jpg",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.pszostak.pl/about/team.jpg",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.pszostak.pl/about/city.jpg",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.pszostak.pl/about/hobby.jpg",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.pszostak.pl/4806c8f2f9a24b2f/script.js",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.pszostak.pl/avatar.webm",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.pszostak.pl/api/source-unlock/verify",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.pszostak.pl/cdn-cgi/rum?",
+      "method": "POST",
+      "postData": "{\"startTime\":1790599921265,\"pageloadId\":\"0d449d4d-1556-43bd-b766-83f679d728b7\",\"eventType\":1,\"nt\":\"navigate\",\"location\":\"https://www.pszostak.pl/\",\"versions\":{\"fl\":\"2024.11.0\",\"js\":\"2026.9.1\",\"timings\":2},\"bi\":{\"be\":\"Blink\",\"bev\":\"120\",\"bv\":\"120\",\"ov\":\"10\"},\"memory\":{\"totalJSHeapSize\":27170602,\"usedJSHeapSize\":18354526,\"jsHeapSizeLimit\":4242538496},\"firstPaint\":1264,\"firstContentfulPaint\":1408,\"timingsV2\":{\"nextHopProtocol\":\"h2\",\"domainLookupStart\":2,\"domainLookupEnd\":2,\"connectStart\":2,\"connectEnd\":2,\"secureConnectionStart\":2,\"requestStart\":3,\"responseStart\":1136,\"responseEnd\":1142,\"domInteractive\":1216,\"domComplete\":24279,\"loadEventStart\":24279,\"loadEventEnd\":24279,\"finalResponseHeadersStart\":1136,\"firstInterimResponseStart\":0,\"transferSize\":18001,\"decodedBodySize\":110803},\"siteToken\":\"3f2b8c95b048465ea9ffc7c13418d60d\",\"st\":2}"
+    },
+    {
+      "url": "https://www.pszostak.pl/guestbook",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.pszostak.pl/_next/image?url=%2Fabout%2Fportrait.jpg&w=1920&q=75",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.pszostak.pl/_next/image?url=%2Fabout%2Frun.jpg&w=384&q=75",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.pszostak.pl/_next/image?url=%2Fabout%2Fcalisthenics.jpg&w=384&q=75",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.pszostak.pl/_next/image?url=%2Fabout%2Fkickboxing.jpg&w=384&q=75",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.pszostak.pl/_next/image?url=%2Fabout%2Fhobby.jpg&w=1920&q=75",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.pszostak.pl/_next/image?url=%2Fprojects%2Fcube_solver.png&w=750&q=75",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.pszostak.pl/_next/image?url=%2Fprojects%2Ftree_2.png&w=384&q=75",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.pszostak.pl/_next/image?url=%2Fprojects%2Ftree_3.png&w=384&q=75",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.pszostak.pl/_next/image?url=%2Fprojects%2Ftree_1.png&w=640&q=75",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.pszostak.pl/_next/image?url=%2Fprojects%2Fnebula.png&w=750&q=75",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.pszostak.pl/_next/image?url=%2Fprojects%2Fguess_who_2.jpg&w=384&q=75",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.pszostak.pl/_next/image?url=%2Fprojects%2Fguess_who_3.jpg&w=384&q=75",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.pszostak.pl/_next/image?url=%2Fprojects%2Fguess_who_1.jpg&w=640&q=75",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.pszostak.pl/_next/static/chunks/80b5b74f08eefa3b.css",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.pszostak.pl/_next/static/chunks/7c1a3a69a1898353.js",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.pszostak.pl/_next/static/chunks/fcf832ee1df2b367.js",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.pszostak.pl/_next/static/chunks/8edcb5623dc16937.js",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.pszostak.pl/_next/static/chunks/37154119f418f3cd.js",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.pszostak.pl/_next/static/chunks/99ef9b6b7d706c4a.js",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.pszostak.pl/_next/static/chunks/e2738ebe4e2bdd11.js",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.pszostak.pl/_next/static/chunks/0bfe6fe2f07605f9.js",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.pszostak.pl/_next/static/chunks/turbopack-5457d55392acd872.js",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.pszostak.pl/_next/static/chunks/382c1c6a5cc0caba.js",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.pszostak.pl/_next/static/chunks/0bd9a51d2de48946.js",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.pszostak.pl/_next/static/chunks/0092daee97f6f192.js",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.pszostak.pl/_next/static/chunks/turbopack-26473fabe5cd4307.js",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.pszostak.pl/_next/static/J568UVX60ceyhTP1KTQjv/_ssgManifest.js",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.pszostak.pl/_next/static/J568UVX60ceyhTP1KTQjv/_buildManifest.js",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.pszostak.pl/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.pszostak.pl/_next/static/J568UVX60ceyhTP1KTQjv/_clientMiddlewareManifest.json",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.pszostak.pl/cdn-cgi/rum?",
+      "method": "POST",
+      "postData": "{\"startTime\":1790599950784,\"pageloadId\":\"65fbb98f-0db4-4fd3-af83-d4b5d5d05abf\",\"eventType\":1,\"nt\":\"navigate\",\"location\":\"https://www.pszostak.pl/guestbook\",\"versions\":{\"fl\":\"2024.11.0\",\"js\":\"2026.9.1\",\"timings\":2},\"bi\":{\"be\":\"Blink\",\"bev\":\"120\",\"bv\":\"120\",\"ov\":\"10\"},\"memory\":{\"totalJSHeapSize\":34227394,\"usedJSHeapSize\":23042330,\"jsHeapSizeLimit\":4242538496},\"firstPaint\":2392,\"firstContentfulPaint\":0,\"timingsV2\":{\"nextHopProtocol\":\"h2\",\"domainLookupStart\":1,\"domainLookupEnd\":1,\"connectStart\":1,\"connectEnd\":1,\"secureConnectionStart\":1,\"requestStart\":2,\"responseStart\":2276,\"responseEnd\":3190,\"domInteractive\":3192,\"domComplete\":3494,\"loadEventStart\":3494,\"loadEventEnd\":3495,\"finalResponseHeadersStart\":2276,\"firstInterimResponseStart\":0,\"transferSize\":3983,\"decodedBodySize\":14285},\"siteToken\":\"3f2b8c95b048465ea9ffc7c13418d60d\",\"st\":2}"
+    },
+    {
+      "url": "https://www.pszostak.pl/api/guestbook",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.pszostak.pl/api/auth/session",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.pszostak.pl/4806c8f2f9a24b2f/script.js",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.pszostak.pl/_next/image?url=https%3A%2F%2Flh3.googleusercontent.com%2Fa%2FACg8ocJMmQFq4y_t69VBMgJsgxmG3Z54wWU0pMrSqZh8Ml6i_iI4xVo%3Ds96-c&w=48&q=75",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.pszostak.pl/_next/image?url=https%3A%2F%2Flh3.googleusercontent.com%2Fa%2FACg8ocIkZpUtte47GyUMkax4Yjt4QGoEfQgRktkChYfUhA0AdKcPQA%3Ds96-c&w=48&q=75",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.pszostak.pl/_next/image?url=https%3A%2F%2Flh3.googleusercontent.com%2Fa%2FACg8ocJfbX49fq6hQCWHolPB0f6PDhjU4_dcGxUVXRw6XbDrgrhtqQ%3Ds96-c&w=48&q=75",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.pszostak.pl/_next/image?url=https%3A%2F%2Flh3.googleusercontent.com%2Fa%2FACg8ocIO9VnzswH_OZnfm93C6D_5yDuu8g4Cfiqe9Hq4u44Vd5mou1A%3Ds96-c&w=48&q=75",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.pszostak.pl/_next/image?url=https%3A%2F%2Flh3.googleusercontent.com%2Fa%2FACg8ocIOKmY7l_vHNvpoZC86tiUgnj-IXIDRq1Kek7qyd-tiGm6drw%3Ds96-c&w=48&q=75",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.pszostak.pl/_next/image?url=https%3A%2F%2Flh3.googleusercontent.com%2Fa%2FACg8ocKQ7I15dE7sfc5CUkex1z3LelukyYXPISESpnPusGDkGc-rag%3Ds96-c&w=48&q=75",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.pszostak.pl/_next/image?url=https%3A%2F%2Flh3.googleusercontent.com%2Fa%2FACg8ocJyoPyA34_rmqV9I5kJjo5DrxfghVKIBl7WpNrrNpf97QaR3A%3Ds96-c&w=48&q=75",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.pszostak.pl/_next/image?url=https%3A%2F%2Flh3.googleusercontent.com%2Fa%2FACg8ocIDHIdtM-P3kMkJKirBelQ4nRK9gqPZbf-DmoQjfLWMWcUD0Q%3Ds96-c&w=48&q=75",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.pszostak.pl/_next/image?url=https%3A%2F%2Flh3.googleusercontent.com%2Fa%2FACg8ocIhp7Phaxh13qhD1RjyrBe8tjL5X37k6I2EA4T_o0f5BoWf-2L0MQ%3Ds96-c&w=48&q=75",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.pszostak.pl/_next/image?url=https%3A%2F%2Favatars.githubusercontent.com%2Fu%2F43489890%3Fv%3D4&w=48&q=75",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.pszostak.pl/_next/image?url=https%3A%2F%2Favatars.githubusercontent.com%2Fu%2F180871805%3Fv%3D4&w=48&q=75",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.pszostak.pl/_next/image?url=https%3A%2F%2Favatars.githubusercontent.com%2Fu%2F78722031%3Fv%3D4&w=48&q=75",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.pszostak.pl/_next/image?url=https%3A%2F%2Favatars.githubusercontent.com%2Fu%2F226017453%3Fv%3D4&w=48&q=75",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.pszostak.pl/_next/image?url=https%3A%2F%2Favatars.githubusercontent.com%2Fu%2F130200045%3Fv%3D4&w=48&q=75",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.pszostak.pl/_next/image?url=https%3A%2F%2Favatars.githubusercontent.com%2Fu%2F157556215%3Fv%3D4&w=48&q=75",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.pszostak.pl/_next/image?url=https%3A%2F%2Favatars.githubusercontent.com%2Fu%2F239037994%3Fv%3D4&w=48&q=75",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.pszostak.pl/_next/image?url=https%3A%2F%2Favatars.githubusercontent.com%2Fu%2F243862558%3Fv%3D4&w=48&q=75",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.pszostak.pl/_next/image?url=https%3A%2F%2Favatars.githubusercontent.com%2Fu%2F167625577%3Fv%3D4&w=48&q=75",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.pszostak.pl/_next/image?url=https%3A%2F%2Favatars.githubusercontent.com%2Fu%2F255759248%3Fv%3D4&w=48&q=75",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.pszostak.pl/_next/image?url=https%3A%2F%2Flh3.googleusercontent.com%2Fa%2FACg8ocJHtbQWzj5pDtd1IHks96B0TS5GjjmpzgYaYBauDMDl83qw7CD7%3Ds96-c&w=48&q=75",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.pszostak.pl/_next/image?url=https%3A%2F%2Flh3.googleusercontent.com%2Fa%2FACg8ocKgh9CjlywSze84P5mi--4fGpwzWKFb1f4ngldcoJuXBfGgGrc%3Ds96-c&w=48&q=75",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.pszostak.pl/_next/image?url=https%3A%2F%2Flh3.googleusercontent.com%2Fa%2FACg8ocJN5ZcARZOK7usv7u0DeeGv3fsdDTnTT-Hv6N-K21phStvxsg%3Ds96-c&w=48&q=75",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.pszostak.pl/_next/image?url=https%3A%2F%2Flh3.googleusercontent.com%2Fa%2FACg8ocLsashJP6ExQ0osOiLHKei_aUMTXIrz8pypvyqvmqMl4Y7O-w%3Ds96-c&w=48&q=75",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.pszostak.pl/api/source-unlock/verify",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.pszostak.pl/achievements",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.pszostak.pl/_next/static/chunks/80b5b74f08eefa3b.css",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.pszostak.pl/_next/image?url=%2Fachievements%2Fgoogle.jpg&w=1080&q=75",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.pszostak.pl/_next/static/chunks/7c1a3a69a1898353.js",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.pszostak.pl/_next/static/chunks/fcf832ee1df2b367.js",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.pszostak.pl/_next/static/chunks/8edcb5623dc16937.js",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.pszostak.pl/_next/static/chunks/37154119f418f3cd.js",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.pszostak.pl/_next/static/chunks/99ef9b6b7d706c4a.js",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.pszostak.pl/_next/static/chunks/e2738ebe4e2bdd11.js",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.pszostak.pl/_next/static/chunks/0bfe6fe2f07605f9.js",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.pszostak.pl/_next/static/chunks/turbopack-5457d55392acd872.js",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.pszostak.pl/_next/static/chunks/944e9428138ed8c8.js",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.pszostak.pl/_next/static/chunks/382c1c6a5cc0caba.js",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.pszostak.pl/_next/static/chunks/turbopack-032e4a58d353cb72.js",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.pszostak.pl/_next/static/J568UVX60ceyhTP1KTQjv/_ssgManifest.js",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.pszostak.pl/_next/static/J568UVX60ceyhTP1KTQjv/_buildManifest.js",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.pszostak.pl/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.pszostak.pl/noise.png",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.pszostak.pl/_next/image?url=%2Fachievements%2Fcassini.jpg&w=750&q=75",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.pszostak.pl/_next/image?url=%2Fachievements%2Fmarathon.jpg&w=750&q=75",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.pszostak.pl/_next/image?url=%2Fachievements%2Ffreeride.jpg&w=750&q=75",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.pszostak.pl/_next/image?url=%2Fachievements%2Fhspu.jpg&w=750&q=75",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.pszostak.pl/_next/static/J568UVX60ceyhTP1KTQjv/_clientMiddlewareManifest.json",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.pszostak.pl/api/auth/session",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.pszostak.pl/4806c8f2f9a24b2f/script.js",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.pszostak.pl/cdn-cgi/rum?",
+      "method": "POST",
+      "postData": "{\"startTime\":1790599966523,\"pageloadId\":\"e6227b10-9f02-4606-949c-23c753568ae3\",\"eventType\":1,\"nt\":\"navigate\",\"location\":\"https://www.pszostak.pl/achievements\",\"versions\":{\"fl\":\"2024.11.0\",\"js\":\"2026.9.1\",\"timings\":2},\"bi\":{\"be\":\"Blink\",\"bev\":\"120\",\"bv\":\"120\",\"ov\":\"10\"},\"memory\":{\"totalJSHeapSize\":34362762,\"usedJSHeapSize\":26642066,\"jsHeapSizeLimit\":4242538496},\"firstPaint\":1180,\"firstContentfulPaint\":1464,\"timingsV2\":{\"nextHopProtocol\":\"h2\",\"domainLookupStart\":2,\"domainLookupEnd\":2,\"connectStart\":2,\"connectEnd\":2,\"secureConnectionStart\":2,\"requestStart\":3,\"responseStart\":923,\"responseEnd\":924,\"domInteractive\":963,\"domComplete\":1516,\"loadEventStart\":1516,\"loadEventEnd\":1516,\"finalResponseHeadersStart\":923,\"firstInterimResponseStart\":0,\"transferSize\":5714,\"decodedBodySize\":26032},\"siteToken\":\"3f2b8c95b048465ea9ffc7c13418d60d\",\"st\":2}"
+    },
+    {
+      "url": "https://www.pszostak.pl/api/source-unlock/verify",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.pszostak.pl/links",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.pszostak.pl/_next/static/chunks/80b5b74f08eefa3b.css",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.pszostak.pl/_next/static/chunks/7c1a3a69a1898353.js",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.pszostak.pl/_next/static/chunks/fcf832ee1df2b367.js",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.pszostak.pl/_next/static/chunks/8edcb5623dc16937.js",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.pszostak.pl/_next/static/chunks/37154119f418f3cd.js",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.pszostak.pl/_next/static/chunks/99ef9b6b7d706c4a.js",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.pszostak.pl/_next/static/chunks/e2738ebe4e2bdd11.js",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.pszostak.pl/_next/static/chunks/0bfe6fe2f07605f9.js",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.pszostak.pl/_next/static/chunks/turbopack-5457d55392acd872.js",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.pszostak.pl/_next/static/chunks/5806ea66e99617b1.js",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.pszostak.pl/_next/static/chunks/turbopack-3b5bb28ca98264b3.js",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.pszostak.pl/_next/static/J568UVX60ceyhTP1KTQjv/_ssgManifest.js",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.pszostak.pl/_next/static/J568UVX60ceyhTP1KTQjv/_buildManifest.js",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.pszostak.pl/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.pszostak.pl/_next/static/J568UVX60ceyhTP1KTQjv/_clientMiddlewareManifest.json",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.pszostak.pl/cdn-cgi/rum?",
+      "method": "POST",
+      "postData": "{\"startTime\":1790599973725,\"pageloadId\":\"1fe38418-8228-42c1-9fe3-a36089d985e8\",\"eventType\":1,\"nt\":\"navigate\",\"location\":\"https://www.pszostak.pl/links\",\"versions\":{\"fl\":\"2024.11.0\",\"js\":\"2026.9.1\",\"timings\":2},\"bi\":{\"be\":\"Blink\",\"bev\":\"120\",\"bv\":\"120\",\"ov\":\"10\"},\"memory\":{\"totalJSHeapSize\":21523866,\"usedJSHeapSize\":17462226,\"jsHeapSizeLimit\":4242538496},\"firstPaint\":948,\"firstContentfulPaint\":0,\"timingsV2\":{\"nextHopProtocol\":\"h2\",\"domainLookupStart\":2,\"domainLookupEnd\":2,\"connectStart\":2,\"connectEnd\":2,\"secureConnectionStart\":2,\"requestStart\":4,\"responseStart\":905,\"responseEnd\":905,\"domInteractive\":925,\"domComplete\":1558,\"loadEventStart\":1558,\"loadEventEnd\":1558,\"finalResponseHeadersStart\":905,\"firstInterimResponseStart\":0,\"transferSize\":4255,\"decodedBodySize\":18217},\"siteToken\":\"3f2b8c95b048465ea9ffc7c13418d60d\",\"st\":2}"
+    },
+    {
+      "url": "https://www.pszostak.pl/api/auth/session",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.pszostak.pl/4806c8f2f9a24b2f/script.js",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.pszostak.pl/api/source-unlock/verify",
+      "method": "GET",
+      "postData": null
+    }
+  ]
+}
