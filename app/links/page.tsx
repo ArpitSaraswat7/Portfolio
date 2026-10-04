@@ -57,31 +57,31 @@ const accentStyles: Record<string, { iconBg: string; borderHover: string; glow: 
     iconBg: "bg-purple-500/10 text-purple-400 border-purple-500/20 group-hover:bg-purple-500/20",
     borderHover: "hover:border-purple-500/40",
     glow: "hover:shadow-[0_0_25px_rgba(168,85,247,0.15)]",
-    text: "group-hover:text-purple-300",
+    text: "group-hover:text-purple-600 dark:group-hover:text-purple-300",
   },
   blue: {
     iconBg: "bg-blue-500/10 text-blue-400 border-blue-500/20 group-hover:bg-blue-500/20",
     borderHover: "hover:border-blue-500/40",
     glow: "hover:shadow-[0_0_25px_rgba(59,130,246,0.15)]",
-    text: "group-hover:text-blue-300",
+    text: "group-hover:text-blue-600 dark:group-hover:text-blue-300",
   },
   cyan: {
     iconBg: "bg-cyan-500/10 text-cyan-400 border-cyan-500/20 group-hover:bg-cyan-500/20",
     borderHover: "hover:border-cyan-500/40",
     glow: "hover:shadow-[0_0_25px_rgba(6,182,212,0.15)]",
-    text: "group-hover:text-cyan-300",
+    text: "group-hover:text-cyan-600 dark:group-hover:text-cyan-300",
   },
   pink: {
     iconBg: "bg-pink-500/10 text-pink-400 border-pink-500/20 group-hover:bg-pink-500/20",
     borderHover: "hover:border-pink-500/40",
     glow: "hover:shadow-[0_0_25px_rgba(236,72,153,0.15)]",
-    text: "group-hover:text-pink-300",
+    text: "group-hover:text-pink-600 dark:group-hover:text-pink-300",
   },
   emerald: {
     iconBg: "bg-emerald-500/10 text-emerald-400 border-emerald-500/20 group-hover:bg-emerald-500/20",
     borderHover: "hover:border-emerald-500/40",
     glow: "hover:shadow-[0_0_25px_rgba(16,185,129,0.15)]",
-    text: "group-hover:text-emerald-300",
+    text: "group-hover:text-emerald-600 dark:group-hover:text-emerald-300",
   },
 };
 

@@ -28,7 +28,11 @@ export function Navbar() {
   const pathname = usePathname();
 
   useEffect(() => {
-    const currentTheme = document.documentElement.getAttribute("data-theme") || localStorage.getItem("theme") || "dark";
+    let savedTheme: string | null = null;
+    try {
+      savedTheme = localStorage.getItem("theme");
+    } catch {}
+    const currentTheme = document.documentElement.getAttribute("data-theme") || savedTheme || "dark";
     if (currentTheme === "light") {
       setIsDark(false);
       document.documentElement.setAttribute("data-theme", "light");
@@ -71,7 +75,9 @@ export function Navbar() {
     } else {
       document.documentElement.classList.remove("dark");
     }
-    localStorage.setItem("theme", nextTheme);
+    try {
+      localStorage.setItem("theme", nextTheme);
+    } catch {}
     setIsDark(!isDark);
   };
 

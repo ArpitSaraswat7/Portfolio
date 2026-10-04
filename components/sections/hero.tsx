@@ -22,7 +22,7 @@ const promptChips = [
 
 function getBotResponse(query: string): string {
   const q = query.toLowerCase();
-  if (q.includes("resume") || q.includes("cv")) {
+  if (q.includes("resume") || /\bcv\b/i.test(q)) {
     return "You can view my complete resume by clicking 'View Resume' right above this chat, or download the PDF directly! It covers my education in Generative AI at SRM University, full-stack projects, and technical skills.";
   }
   if (
