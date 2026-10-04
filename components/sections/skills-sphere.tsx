@@ -332,7 +332,7 @@ export function SkillsSphere() {
             ctx.beginPath();
             const ringRadius = radius * Math.cos(Math.asin(lat));
             const ringY = radius * lat;
-            const segments = 48;
+            const segments = isMobile ? 32 : 48;
 
             for (let s = 0; s <= segments; s++) {
               const theta = (s / segments) * Math.PI * 2;
@@ -361,7 +361,7 @@ export function SkillsSphere() {
           const lonAngles = [0, Math.PI / 4, Math.PI / 2, (3 * Math.PI) / 4];
           lonAngles.forEach((lon) => {
             ctx.beginPath();
-            const segments = 48;
+            const segments = isMobile ? 32 : 48;
             for (let s = 0; s <= segments; s++) {
               const theta = (s / segments) * Math.PI * 2;
               const px = Math.cos(theta) * radius * Math.cos(lon);
@@ -414,13 +414,15 @@ export function SkillsSphere() {
           el.style.opacity = `${opacity}`;
           el.style.zIndex = `${zIndex}`;
 
-          // Back icons blur & grayscale for strong depth perception
-          if (z < -30) {
-            const blurAmount = ((-z - 30) / (radius - 30)) * 1.5;
-            const grayAmount = ((-z - 30) / (radius - 30)) * 80;
-            el.style.filter = `grayscale(${grayAmount}%) blur(${blurAmount}px)`;
-          } else {
-            el.style.filter = `drop-shadow(0 4px 14px ${skills[i].color}40)`;
+          // Back icons blur & grayscale on desktop; on mobile use GPU composited opacity & scale
+          if (!isMobile) {
+            if (z < -30) {
+              const blurAmount = ((-z - 30) / (radius - 30)) * 1.5;
+              const grayAmount = ((-z - 30) / (radius - 30)) * 80;
+              el.style.filter = `grayscale(${grayAmount}%) blur(${blurAmount}px)`;
+            } else {
+              el.style.filter = `drop-shadow(0 4px 14px ${skills[i].color}40)`;
+            }
           }
         }
       }
@@ -511,6 +513,7 @@ export function SkillsSphere() {
         {/* 3D Sphere Interactive Area */}
         <div
           ref={containerRef}
+          style={{ touchAction: "pan-y" }}
           className="relative w-full h-[480px] sm:h-[580px] md:h-[650px] flex items-center justify-center cursor-grab active:cursor-grabbing select-none -mt-2 sm:-mt-6"
         >
           {/* Subtle Central Purple Atmosphere Glow */}

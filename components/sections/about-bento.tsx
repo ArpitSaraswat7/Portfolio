@@ -84,6 +84,7 @@ export function AboutBento() {
             src="/Arpit.jpeg"
             alt="Arpit Saraswat Portrait"
             fill
+            sizes="(max-width: 768px) 50vw, 33vw"
             className="object-cover"
           />
         </div>
@@ -214,6 +215,7 @@ export function AboutBento() {
                   src={mindsetCards[(activeMindsetIndex + 1) % mindsetCards.length].src}
                   alt="Mindset side"
                   fill
+                  sizes="(max-width: 768px) 35vw, 20vw"
                   className="object-cover pointer-events-none"
                 />
               </div>
@@ -231,6 +233,7 @@ export function AboutBento() {
                   src={mindsetCards[activeMindsetIndex].src}
                   alt={mindsetCards[activeMindsetIndex].title}
                   fill
+                  sizes="(max-width: 768px) 45vw, 25vw"
                   className="object-cover pointer-events-none transition-transform duration-500 group-hover/center:scale-105"
                 />
                 <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/85 via-black/40 to-transparent p-2 md:p-3 pt-6 md:pt-8">
@@ -255,6 +258,7 @@ export function AboutBento() {
                   src={mindsetCards[(activeMindsetIndex + 2) % mindsetCards.length].src}
                   alt="Mindset right"
                   fill
+                  sizes="(max-width: 768px) 35vw, 20vw"
                   className="object-cover pointer-events-none"
                 />
               </div>
@@ -341,6 +345,7 @@ export function AboutBento() {
               src={currentCenterImage.src}
               alt={currentCenterImage.alt}
               fill
+              sizes="(max-width: 768px) 100vw, 33vw"
               className="object-cover transition-transform duration-700 ease-out hover:scale-105"
             />
           </div>
@@ -357,6 +362,7 @@ export function AboutBento() {
               src="/about/map.svg"
               alt="Map Background"
               fill
+              sizes="(max-width: 768px) 50vw, 33vw"
               className="object-cover grayscale opacity-50 mix-blend-luminosity scale-125 translate-y-4"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-[var(--card)] via-[var(--card)]/70 to-transparent" />
@@ -394,6 +400,7 @@ export function AboutBento() {
             src="/about/gym.svg"
             alt="Gym & Discipline"
             fill
+            sizes="(max-width: 768px) 50vw, 33vw"
             className="object-cover"
           />
         </div>

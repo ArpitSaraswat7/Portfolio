@@ -43,27 +43,46 @@ export function Navbar() {
       document.documentElement.classList.add("dark");
     }
 
+    let ticking = false;
     const handleScroll = () => {
-      if (pathname === "/") {
-        const sections = ["home", "about", "projects", "skills", "other"];
-        const scrollPosition = window.scrollY + 240;
+      if (!ticking) {
+        window.requestAnimationFrame(() => {
+          if (pathname === "/") {
+            const sections = ["home", "about", "projects", "skills", "other"];
+            const scrollPosition = window.scrollY + 240;
 
-        for (let i = sections.length - 1; i >= 0; i--) {
-          const sectionId = sections[i];
-          const el = document.getElementById(sectionId);
-          if (el) {
-            const top = el.offsetTop;
-            if (scrollPosition >= top) {
-              setActiveSection(sectionId);
-              break;
+            for (let i = sections.length - 1; i >= 0; i--) {
+              const sectionId = sections[i];
+              const el = document.getElementById(sectionId);
+              if (el) {
+                const top = el.offsetTop;
+                if (scrollPosition >= top) {
+                  setActiveSection((prev) => (prev !== sectionId ? sectionId : prev));
+                  break;
+                }
+              }
             }
           }
-        }
+          ticking = false;
+        });
+        ticking = true;
       }
     };
 
     window.addEventListener("scroll", handleScroll, { passive: true });
     handleScroll();
+
+    if (pathname === "/" && window.location.hash) {
+      const hashId = window.location.hash.replace("#", "");
+      const target = document.getElementById(hashId);
+      if (target) {
+        setTimeout(() => {
+          target.scrollIntoView({ behavior: "smooth", block: "start" });
+          setActiveSection((prev) => (prev !== hashId ? hashId : prev));
+        }, 120);
+      }
+    }
+
     return () => window.removeEventListener("scroll", handleScroll);
   }, [pathname]);
 
@@ -91,9 +110,7 @@ export function Navbar() {
         e.preventDefault();
         const targetEl = document.getElementById(id);
         if (targetEl) {
-          const yOffset = id === "about" ? 0 : -80;
-          const y = targetEl.getBoundingClientRect().top + window.pageYOffset + yOffset;
-          window.scrollTo({ top: y, behavior: "smooth" });
+          targetEl.scrollIntoView({ behavior: "smooth", block: "start" });
           setActiveSection(id);
         }
       }
@@ -205,12 +222,13 @@ export function Navbar() {
             style={{
               backgroundColor: "var(--theme-toggle-bg)",
               borderColor: "var(--theme-toggle-border)",
+              touchAction: "manipulation",
             }}
-            className="relative w-12 h-12 sm:w-14 sm:h-14 rounded-full border flex items-center justify-center transition-all duration-300 hover:scale-105 active:scale-95 cursor-pointer shadow-xl shadow-black/10 shrink-0"
+            className="relative w-12 h-12 sm:w-14 sm:h-14 rounded-full border flex items-center justify-center transition-all duration-300 hover:scale-105 active:scale-95 cursor-pointer shadow-xl shadow-black/10 shrink-0 select-none"
             aria-label={isDark ? "Switch to light mode" : "Switch to dark mode"}
           >
             <div
-              className="absolute transition-all duration-300"
+              className="absolute transition-all duration-300 pointer-events-none"
               style={{
                 opacity: isDark ? 1 : 0,
                 transform: isDark ? "scale(1) rotate(0deg)" : "scale(0) rotate(-180deg)",
@@ -219,7 +237,7 @@ export function Navbar() {
               <Moon className="w-4 h-4 sm:w-5 sm:h-5 text-[var(--theme-toggle-icon)]" />
             </div>
             <div
-              className="absolute transition-all duration-300"
+              className="absolute transition-all duration-300 pointer-events-none"
               style={{
                 opacity: !isDark ? 1 : 0,
                 transform: !isDark ? "scale(1) rotate(0deg)" : "scale(0) rotate(180deg)",
@@ -231,11 +249,12 @@ export function Navbar() {
 
           <button
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-            className="glass-strong rounded-full shadow-xl shadow-black/10 p-3.5 sm:p-4 cursor-pointer hover:scale-105 active:scale-95 transition-transform shrink-0"
+            style={{ touchAction: "manipulation" }}
+            className="glass-strong rounded-full shadow-xl shadow-black/10 p-3.5 sm:p-4 cursor-pointer hover:scale-105 active:scale-95 transition-transform shrink-0 select-none"
             aria-label="Toggle menu"
             aria-expanded={mobileMenuOpen}
           >
-            <div className="w-5 h-4 flex flex-col justify-between items-center relative">
+            <div className="w-5 h-4 flex flex-col justify-between items-center relative pointer-events-none">
               <span
                 className={`block h-0.5 w-5 rounded-full transition-all duration-300 ${
                   mobileMenuOpen ? "rotate-45 translate-y-1.5" : ""
@@ -261,10 +280,11 @@ export function Navbar() {
             href={siteConfig.links.resume || "/Resume.pdf"}
             target="_blank"
             rel="noopener noreferrer"
-            className="glass-strong rounded-full shadow-xl shadow-black/10 flex items-center justify-center gap-2 text-sm font-semibold transition-transform duration-300 hover:scale-105 shrink-0 px-3.5 py-3 sm:px-4 sm:py-3.5"
             style={{
               color: "var(--foreground)",
+              touchAction: "manipulation",
             }}
+            className="glass-strong rounded-full shadow-xl shadow-black/10 flex items-center justify-center gap-2 text-sm font-semibold transition-transform duration-300 hover:scale-105 active:scale-95 shrink-0 px-3.5 py-3 sm:px-4 sm:py-3.5 select-none"
             aria-label="View Resume"
           >
             <FileText className="w-4 h-4 text-violet-400" />
@@ -279,7 +299,7 @@ export function Navbar() {
               animate={{ height: "auto", opacity: 1 }}
               exit={{ height: 0, opacity: 0 }}
               transition={{ duration: 0.3, ease: [0.25, 0.46, 0.45, 0.94] }}
-              className="lg:hidden overflow-hidden"
+              className="lg:hidden overflow-hidden pointer-events-auto"
             >
               <div className="glass-strong rounded-2xl shadow-xl shadow-black/10 mt-4 p-4">
                 <div className="flex flex-col gap-2">
@@ -294,12 +314,13 @@ export function Navbar() {
                         key={item.name}
                         href={item.href}
                         onClick={(e) => handleNavClick(e, item.href, item.id)}
-                        className="relative text-sm font-semibold rounded-full transition-colors duration-300 cursor-pointer text-center"
+                        className="relative block w-full text-sm font-semibold rounded-full transition-colors duration-300 cursor-pointer text-center select-none active:scale-[0.98]"
                         style={{
                           padding: "12px 24px",
                           color: isActive ? "var(--foreground)" : "var(--muted)",
                           background: isActive ? "var(--accent)" : "transparent",
                           opacity: isActive ? 1 : 0.85,
+                          touchAction: "manipulation",
                         }}
                       >
                         {item.name}
@@ -311,11 +332,13 @@ export function Navbar() {
                     href={siteConfig.links.resume || "/Resume.pdf"}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex items-center justify-center gap-2 text-sm font-semibold rounded-full transition-transform duration-300 mt-2 hover:scale-[1.02]"
+                    onClick={() => setMobileMenuOpen(false)}
+                    className="flex items-center justify-center gap-2 text-sm font-semibold rounded-full transition-transform duration-300 mt-2 hover:scale-[1.02] active:scale-[0.98] select-none"
                     style={{
                       padding: "12px 24px",
                       color: "var(--foreground)",
                       border: "1px solid var(--card-border)",
+                      touchAction: "manipulation",
                     }}
                   >
                     <FileText className="w-4 h-4 text-violet-400" />

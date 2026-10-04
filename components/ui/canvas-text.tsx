@@ -128,7 +128,7 @@ export function CanvasText({
     if (!ctx) return;
 
     const { width, height } = dimensions;
-    const dpr = window.devicePixelRatio || 1;
+    const dpr = Math.min(window.devicePixelRatio || 1, 2);
 
     canvas.width = width * dpr;
     canvas.height = height * dpr;
@@ -212,20 +212,42 @@ export function CanvasText({
       }
     };
 
+    let isVisible = true;
+    const animate = (currentTime: number) => {
+      if (!isVisible) return;
+      renderFrame(currentTime);
+      animationRef.current = requestAnimationFrame(animate);
+    };
+
     if (prefersReducedMotion) {
       renderFrame(performance.now());
     } else {
-      const animate = (currentTime: number) => {
-        renderFrame(currentTime);
-        animationRef.current = requestAnimationFrame(animate);
-      };
-
       animationRef.current = requestAnimationFrame(animate);
     }
 
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        const wasVisible = isVisible;
+        isVisible = entry.isIntersecting;
+        if (isVisible && !wasVisible && !prefersReducedMotion) {
+          if (!animationRef.current) {
+            animationRef.current = requestAnimationFrame(animate);
+          }
+        } else if (!isVisible && animationRef.current) {
+          cancelAnimationFrame(animationRef.current);
+          animationRef.current = 0;
+        }
+      },
+      { rootMargin: "80px" }
+    );
+
+    observer.observe(canvas);
+
     return () => {
+      observer.disconnect();
       if (animationRef.current) {
         cancelAnimationFrame(animationRef.current);
+        animationRef.current = 0;
       }
     };
   }, [

@@ -199,11 +199,12 @@ export const WavyBackground = ({
       const noise = noiseRef.current;
       if (!noise) return;
       nt += prefersReducedMotion ? 0 : getSpeed();
+      const step = w < 640 ? 8 : 5;
       for (let i = 0; i < n; i++) {
         ctx.beginPath();
         ctx.lineWidth = waveWidth || 50;
         ctx.strokeStyle = waveColors[i % waveColors.length];
-        for (let x = 0; x < w; x += 5) {
+        for (let x = 0; x < w; x += step) {
           const y = noise(x / 800, 0.3 * i, nt) * 100;
           ctx.lineTo(x, y + h * waveVerticalOffset);
         }
@@ -212,8 +213,10 @@ export const WavyBackground = ({
       }
     };
 
+    let isTabVisible = !document.hidden;
+
     const render = () => {
-      if (!ctx) return;
+      if (!ctx || !isTabVisible) return;
       if (backgroundFill === "transparent") {
         ctx.clearRect(0, 0, w, h);
       } else {
@@ -228,10 +231,24 @@ export const WavyBackground = ({
       }
     };
 
+    const handleVisibilityChange = () => {
+      isTabVisible = !document.hidden;
+      if (isTabVisible && !prefersReducedMotion) {
+        if (!animationFrameId.current) {
+          animationFrameId.current = requestAnimationFrame(render);
+        }
+      } else if (!isTabVisible && animationFrameId.current) {
+        cancelAnimationFrame(animationFrameId.current);
+        animationFrameId.current = null;
+      }
+    };
+
+    document.addEventListener("visibilitychange", handleVisibilityChange);
     render();
 
     return () => {
       window.removeEventListener("resize", handleResize);
+      document.removeEventListener("visibilitychange", handleVisibilityChange);
       if (animationFrameId.current) {
         cancelAnimationFrame(animationFrameId.current);
       }

@@ -173,6 +173,7 @@ export function Hero({
                   src="/Arpit.jpeg"
                   alt="Arpit Saraswat"
                   fill
+                  sizes="(max-width: 640px) 80px, 100px"
                   className="object-cover"
                   priority
                 />
