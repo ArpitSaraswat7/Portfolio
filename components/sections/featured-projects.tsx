@@ -66,22 +66,43 @@ export function FeaturedProjects() {
                   </span>
                 </div>
 
-                <div className="flex items-center justify-between gap-3">
+                <div className="flex items-center justify-between gap-3 flex-wrap sm:flex-nowrap">
                   <h3 className="font-bold tracking-tight text-[var(--foreground)] text-xl sm:text-2xl">
                     {project.title}
                   </h3>
 
-                  {/* Clean GitHub Star Button without fake numbers */}
-                  <a
-                    href={project.githubUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-medium bg-white/[0.05] hover:bg-violet-600/30 hover:border-violet-500/50 border border-white/10 text-zinc-300 hover:text-white transition-all duration-200 shadow-sm shrink-0 active:scale-95"
-                    aria-label={`View ${project.title} on GitHub`}
-                  >
-                    <GithubStarIcon className="w-3.5 h-3.5 text-zinc-300" />
-                    <span>Star</span>
-                  </a>
+                  {/* Actions: Live Demo + GitHub */}
+                  <div className="flex items-center gap-2 shrink-0">
+                    {project.liveUrl && (
+                      <a
+                        href={project.liveUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-semibold bg-emerald-500/10 hover:bg-emerald-500/20 text-emerald-400 hover:text-emerald-200 border border-emerald-500/30 hover:border-emerald-400/60 shadow-[0_0_12px_rgba(16,185,129,0.15)] hover:shadow-[0_0_18px_rgba(16,185,129,0.35)] transition-all duration-200 shrink-0 active:scale-95 group/live"
+                        aria-label={`Open live demo for ${project.title}`}
+                      >
+                        <span className="relative flex h-2 w-2">
+                          <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+                          <span className="relative inline-flex rounded-full h-2 w-2 bg-emerald-400"></span>
+                        </span>
+                        <span>Live Demo</span>
+                        <ArrowUpRight className="w-3.5 h-3.5 text-emerald-400 group-hover/live:translate-x-0.5 group-hover/live:-translate-y-0.5 transition-transform" />
+                      </a>
+                    )}
+
+                    {project.githubUrl && (
+                      <a
+                        href={project.githubUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-medium bg-white/[0.05] hover:bg-violet-600/30 hover:border-violet-500/50 border border-white/10 text-zinc-300 hover:text-white transition-all duration-200 shadow-sm shrink-0 active:scale-95"
+                        aria-label={`View ${project.title} on GitHub`}
+                      >
+                        <GithubStarIcon className="w-3.5 h-3.5 text-zinc-300" />
+                        <span>GitHub</span>
+                      </a>
+                    )}
+                  </div>
                 </div>
               </header>
 
@@ -89,6 +110,25 @@ export function FeaturedProjects() {
               <div className="relative w-full aspect-[16/12] sm:aspect-[4/3] rounded-[24px] sm:rounded-[28px] md:rounded-[32px] overflow-hidden border border-white/10 bg-[#141418] shadow-2xl transition-all duration-300 group-hover:border-white/25 flex flex-col justify-between">
                 {/* Custom Gradient Background */}
                 <div className={`absolute inset-0 bg-gradient-to-br ${project.gradient}`} />
+
+                {/* Floating Live Badge if Live URL is Available */}
+                {project.liveUrl && (
+                  <a
+                    href={project.liveUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="absolute top-4 right-4 z-30 inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-xs font-medium bg-black/60 hover:bg-black/80 backdrop-blur-md border border-emerald-500/40 hover:border-emerald-400 text-emerald-300 hover:text-white shadow-lg shadow-black/40 transition-all duration-200 group/pill"
+                    title={`Open ${project.title} Live`}
+                    aria-label={`Open live app for ${project.title}`}
+                  >
+                    <span className="relative flex h-1.5 w-1.5">
+                      <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+                      <span className="relative inline-flex rounded-full h-1.5 w-1.5 bg-emerald-400"></span>
+                    </span>
+                    <span className="font-mono text-[10px] tracking-wide uppercase font-semibold">Live App</span>
+                    <ArrowUpRight className="w-3 h-3 group-hover/pill:translate-x-0.5 group-hover/pill:-translate-y-0.5 transition-transform" />
+                  </a>
+                )}
 
                 {/* Project Description (Inside the Colored Card) */}
                 <div className="relative z-10 px-5 pt-5 sm:px-6 sm:pt-6 shrink-0">
@@ -102,24 +142,59 @@ export function FeaturedProjects() {
                   {project.deviceType === "desktop" ? (
                     /* Desktop Browser Mockup */
                     <div className="w-[86%] sm:w-[88%] -bottom-1 relative origin-bottom transition-transform duration-300 group-hover:translate-y-[-2px]">
-                      <div className="relative aspect-[16/10] rounded-t-xl bg-zinc-900 border-x border-t border-white/20 overflow-hidden shadow-2xl flex flex-col">
-                        {/* Browser Top Window Chrome Dots */}
-                        <div className="h-5 sm:h-5.5 bg-zinc-800/95 flex items-center gap-1.5 px-3 border-b border-white/10 z-20 shrink-0">
-                          <div className="w-2 h-2 rounded-full bg-[#FF5F57]" />
-                          <div className="w-2 h-2 rounded-full bg-[#FEBC2E]" />
-                          <div className="w-2 h-2 rounded-full bg-[#28C840]" />
+                      {project.liveUrl ? (
+                        <a
+                          href={project.liveUrl}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="block group/mockup"
+                          aria-label={`Open ${project.title} live demo`}
+                        >
+                          <div className="relative aspect-[16/10] rounded-t-xl bg-zinc-900 border-x border-t border-white/20 group-hover/mockup:border-emerald-400/50 overflow-hidden shadow-2xl flex flex-col transition-colors duration-200">
+                            {/* Browser Top Window Chrome Dots */}
+                            <div className="h-5 sm:h-5.5 bg-zinc-800/95 flex items-center justify-between px-3 border-b border-white/10 z-20 shrink-0">
+                              <div className="flex items-center gap-1.5">
+                                <div className="w-2 h-2 rounded-full bg-[#FF5F57]" />
+                                <div className="w-2 h-2 rounded-full bg-[#FEBC2E]" />
+                                <div className="w-2 h-2 rounded-full bg-[#28C840]" />
+                              </div>
+                              <span className="text-[10px] font-mono text-zinc-400 flex items-center gap-1 opacity-80 group-hover/mockup:text-emerald-300">
+                                <span>live</span>
+                                <ArrowUpRight className="w-2.5 h-2.5" />
+                              </span>
+                            </div>
+                            {/* Screenshot Content Frame */}
+                            <div className="relative flex-1 w-full bg-zinc-950">
+                              <Image
+                                src={project.image}
+                                alt={`${project.title} Screenshot`}
+                                fill
+                                className="object-cover object-top transition-transform duration-300 group-hover/mockup:scale-[1.02]"
+                                sizes="(max-width: 768px) 90vw, 45vw"
+                              />
+                            </div>
+                          </div>
+                        </a>
+                      ) : (
+                        <div className="relative aspect-[16/10] rounded-t-xl bg-zinc-900 border-x border-t border-white/20 overflow-hidden shadow-2xl flex flex-col">
+                          {/* Browser Top Window Chrome Dots */}
+                          <div className="h-5 sm:h-5.5 bg-zinc-800/95 flex items-center gap-1.5 px-3 border-b border-white/10 z-20 shrink-0">
+                            <div className="w-2 h-2 rounded-full bg-[#FF5F57]" />
+                            <div className="w-2 h-2 rounded-full bg-[#FEBC2E]" />
+                            <div className="w-2 h-2 rounded-full bg-[#28C840]" />
+                          </div>
+                          {/* Screenshot Content Frame */}
+                          <div className="relative flex-1 w-full bg-zinc-950">
+                            <Image
+                              src={project.image}
+                              alt={`${project.title} Screenshot`}
+                              fill
+                              className="object-cover object-top"
+                              sizes="(max-width: 768px) 90vw, 45vw"
+                            />
+                          </div>
                         </div>
-                        {/* Screenshot Content Frame */}
-                        <div className="relative flex-1 w-full bg-zinc-950">
-                          <Image
-                            src={project.image}
-                            alt={`${project.title} Screenshot`}
-                            fill
-                            className="object-cover object-top"
-                            sizes="(max-width: 768px) 90vw, 45vw"
-                          />
-                        </div>
-                      </div>
+                      )}
                     </div>
                   ) : (
                     /* Mobile 3-Phone Perspective Composition */
@@ -152,17 +227,39 @@ export function FeaturedProjects() {
 
                       {/* Center Phone (Dominant) */}
                       <div className="relative w-[48%] -bottom-8 sm:-bottom-10 z-20 origin-bottom transition-transform duration-300 group-hover:translate-y-[-2px]">
-                        <div className="relative aspect-[9/18] rounded-t-2xl border-x-3 sm:border-x-4 border-t-3 sm:border-t-4 border-zinc-900 bg-zinc-950 overflow-hidden shadow-2xl ring-1 ring-white/10">
-                          {/* Notch */}
-                          <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[35%] h-2.5 bg-black rounded-b-lg z-30" />
-                          <Image
-                            src={project.image}
-                            alt={`${project.title} Center Phone`}
-                            fill
-                            className="object-cover object-top"
-                            sizes="(max-width: 768px) 45vw, 22vw"
-                          />
-                        </div>
+                        {project.liveUrl ? (
+                          <a
+                            href={project.liveUrl}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="block group/phone"
+                            aria-label={`Open ${project.title} live demo`}
+                          >
+                            <div className="relative aspect-[9/18] rounded-t-2xl border-x-3 sm:border-x-4 border-t-3 sm:border-t-4 border-zinc-900 group-hover/phone:border-emerald-500/50 bg-zinc-950 overflow-hidden shadow-2xl ring-1 ring-white/10 group-hover/phone:ring-emerald-400/50 transition-all duration-200">
+                              {/* Notch */}
+                              <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[35%] h-2.5 bg-black rounded-b-lg z-30" />
+                              <Image
+                                src={project.image}
+                                alt={`${project.title} Center Phone`}
+                                fill
+                                className="object-cover object-top transition-transform duration-300 group-hover/phone:scale-[1.02]"
+                                sizes="(max-width: 768px) 45vw, 22vw"
+                              />
+                            </div>
+                          </a>
+                        ) : (
+                          <div className="relative aspect-[9/18] rounded-t-2xl border-x-3 sm:border-x-4 border-t-3 sm:border-t-4 border-zinc-900 bg-zinc-950 overflow-hidden shadow-2xl ring-1 ring-white/10">
+                            {/* Notch */}
+                            <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[35%] h-2.5 bg-black rounded-b-lg z-30" />
+                            <Image
+                              src={project.image}
+                              alt={`${project.title} Center Phone`}
+                              fill
+                              className="object-cover object-top"
+                              sizes="(max-width: 768px) 45vw, 22vw"
+                            />
+                          </div>
+                        )}
                       </div>
                     </div>
                   )}
@@ -170,16 +267,18 @@ export function FeaturedProjects() {
               </div>
 
               {/* Tech Stack Pills Below */}
-              <footer className="flex flex-wrap gap-1.5 mt-3.5 shrink-0">
-                {project.tech.map((t) => (
-                  <span
-                    key={t}
-                    className="px-2.5 py-1 text-[10px] font-mono font-medium rounded-full bg-[var(--card)] border border-[var(--card-border)] text-[var(--muted)]"
-                  >
-                    {t}
-                  </span>
-                ))}
-              </footer>
+              {project.tech && project.tech.length > 0 && (
+                <footer className="flex flex-wrap gap-1.5 mt-3.5 shrink-0">
+                  {project.tech.map((t) => (
+                    <span
+                      key={t}
+                      className="px-2.5 py-1 text-[10px] font-mono font-medium rounded-full bg-[var(--card)] border border-[var(--card-border)] text-[var(--muted)]"
+                    >
+                      {t}
+                    </span>
+                  ))}
+                </footer>
+              )}
             </article>
           ))}
         </div>
@@ -200,3 +299,5 @@ export function FeaturedProjects() {
     </section>
   );
 }
+
+export default FeaturedProjects;

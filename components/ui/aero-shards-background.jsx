@@ -3,7 +3,7 @@
 import dynamic from "next/dynamic";
 
 const AeroShards = dynamic(
-  () => import("./AeroShards"),
+  () => import("./AeroShards").then((mod) => mod.default || mod.AeroShards),
   { ssr: false }
 );
 

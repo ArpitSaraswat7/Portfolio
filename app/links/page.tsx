@@ -2,7 +2,7 @@
 
 import React from "react";
 import Link from "next/link";
-import { ArrowLeft, ArrowUpRight, Mail, Globe } from "lucide-react";
+import { ArrowUpRight, Mail, Globe } from "lucide-react";
 import { Footer } from "@/components/ui/footer";
 import { socialLinks } from "@/lib/site-config";
 
@@ -87,7 +87,7 @@ const accentStyles: Record<string, { iconBg: string; borderHover: string; glow: 
 
 export default function LinksPage() {
   return (
-    <div className="min-h-screen flex flex-col justify-between bg-[#0a0a0f] text-[#e4e4e7] bg-dot-pattern">
+    <div className="min-h-screen flex flex-col justify-between bg-[var(--background)] text-[var(--foreground)] bg-dot-pattern">
       <div className="fixed inset-0 pointer-events-none -z-10 overflow-hidden">
         <div className="absolute top-20 -left-32 w-96 h-96 bg-cyan-600/10 rounded-full blur-[120px]" />
         <div className="absolute top-1/2 -right-32 w-96 h-96 bg-purple-600/15 rounded-full blur-[120px]" />
@@ -98,21 +98,20 @@ export default function LinksPage() {
         <div className="mb-8">
           <Link
             href="/"
-            className="inline-flex items-center gap-2 text-xs font-semibold text-zinc-400 hover:text-white px-4 py-2 rounded-full bg-white/5 border border-white/10 hover:border-cyan-500/40 hover:bg-cyan-500/10 transition-all duration-300 backdrop-blur-md cursor-pointer"
+            className="inline-flex items-center gap-2 text-xs font-semibold text-[var(--muted)] hover:text-[var(--foreground)] px-4 py-2 rounded-full bg-[var(--card)] border border-[var(--card-border)] hover:border-cyan-500/40 hover:bg-cyan-500/10 transition-all duration-300 backdrop-blur-md cursor-pointer"
           >
-            <ArrowLeft className="w-4 h-4" />
-            <span>← Back to home</span>
+            ← Back to home
           </Link>
         </div>
 
         <div className="text-center mb-12 sm:mb-14">
-          <span className="text-xs sm:text-sm font-mono tracking-widest text-cyan-400 uppercase font-semibold">
+          <span className="text-xs sm:text-sm font-mono tracking-widest text-cyan-500 uppercase font-semibold">
             CONNECT
           </span>
-          <h1 className="mt-3 text-4xl sm:text-5xl md:text-6xl font-extrabold tracking-tight text-white">
+          <h1 className="mt-3 text-4xl sm:text-5xl md:text-6xl font-extrabold tracking-tight text-[var(--foreground)]">
             My Links
           </h1>
-          <p className="mt-3.5 text-sm sm:text-base text-zinc-400 max-w-md mx-auto leading-relaxed">
+          <p className="mt-3.5 text-sm sm:text-base text-[var(--muted)] max-w-md mx-auto leading-relaxed">
             Find me across the web and social platforms
           </p>
         </div>
@@ -128,7 +127,7 @@ export default function LinksPage() {
                 href={link.url}
                 target={isExternal && !link.url.startsWith("mailto:") ? "_blank" : undefined}
                 rel={isExternal && !link.url.startsWith("mailto:") ? "noopener noreferrer" : undefined}
-                className={`group relative p-4 sm:p-5 rounded-2xl bg-white/[0.03] border border-white/10 backdrop-blur-xl shadow-lg ${styles.borderHover} ${styles.glow} hover:bg-white/[0.05] hover:-translate-y-1 transition-all duration-300 flex items-center justify-between cursor-pointer`}
+                className={`group relative p-4 sm:p-5 rounded-2xl bg-[var(--card)] border border-[var(--card-border)] backdrop-blur-xl shadow-lg ${styles.borderHover} ${styles.glow} hover:bg-[var(--glass-bg)] hover:-translate-y-1 transition-all duration-300 flex items-center justify-between cursor-pointer`}
               >
                 <div className="flex items-center gap-4">
                   <div
@@ -138,14 +137,14 @@ export default function LinksPage() {
                   </div>
 
                   <div>
-                    <h2 className={`text-base sm:text-lg font-bold text-white ${styles.text} transition-colors`}>
+                    <h2 className={`text-base sm:text-lg font-bold text-[var(--foreground)] ${styles.text} transition-colors`}>
                       {link.name}
                     </h2>
-                    <p className="text-xs text-zinc-400 mt-0.5">{link.handle}</p>
+                    <p className="text-xs text-[var(--muted)] mt-0.5">{link.handle}</p>
                   </div>
                 </div>
 
-                <div className="w-9 h-9 rounded-xl bg-white/5 border border-white/5 flex items-center justify-center text-zinc-400 group-hover:text-white group-hover:bg-white/10 transition-all duration-300">
+                <div className="w-9 h-9 rounded-xl bg-[var(--surface-soft)] border border-[var(--card-border)] flex items-center justify-center text-[var(--muted)] group-hover:text-[var(--foreground)] group-hover:bg-[var(--glass-bg)] transition-all duration-300">
                   <ArrowUpRight className="w-4 h-4 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
                 </div>
               </a>

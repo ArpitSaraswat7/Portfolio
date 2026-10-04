@@ -278,3 +278,5 @@ export function CanvasText({
     </span>
   );
 }
+
+export default CanvasText;

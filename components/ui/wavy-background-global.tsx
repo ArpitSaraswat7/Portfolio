@@ -1,8 +1,13 @@
 "use client";
 
-import { WavyBackground } from "@/components/ui/wavy-background";
+import dynamic from "next/dynamic";
 
-export default function WavyBackgroundGlobal() {
+const WavyBackground = dynamic(
+  () => import("@/components/ui/wavy-background").then((mod) => mod.WavyBackground || mod.default),
+  { ssr: false }
+);
+
+export function WavyBackgroundGlobal() {
   return (
     <div
       className="fixed inset-0 z-0 overflow-hidden pointer-events-none"
@@ -16,7 +21,7 @@ export default function WavyBackgroundGlobal() {
           "#C084FC",
           "#7C3AED",
         ]}
-        backgroundFill="#0A0810"
+        backgroundFill="transparent"
         blur={8}
         speed="slow"
         waveWidth={32}
@@ -28,4 +33,4 @@ export default function WavyBackgroundGlobal() {
   );
 }
 
-export { WavyBackgroundGlobal };
+export default WavyBackgroundGlobal;

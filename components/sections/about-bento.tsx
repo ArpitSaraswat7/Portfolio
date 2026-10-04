@@ -22,10 +22,10 @@ const mindsetCards = [
 ];
 
 const centerImages: Record<string, { src: string; alt: string }> = {
-  default: { src: "/about/portrait.svg", alt: "Arpit Portrait" },
-  science: { src: "/about/coding.svg", alt: "GenAI Research" },
-  university: { src: "/about/portrait.svg", alt: "SRM University" },
-  competitions: { src: "/about/hackathon.svg", alt: "Competitions & Hackathons" },
+  default: { src: "/Arpit.jpeg", alt: "Arpit Saraswat Portrait" },
+  science: { src: "/about/coding.svg", alt: "GenAI & AI/ML Projects" },
+  university: { src: "/Arpit.jpeg", alt: "Arpit Saraswat - SRM University" },
+  competitions: { src: "/Chandigarh.jpg", alt: "Chandigarh University Hackathon Top 5 Certificate" },
 };
 
 export function AboutBento() {
@@ -81,8 +81,8 @@ export function AboutBento() {
            ========================================================================= */}
         <div className="md:hidden aspect-square col-span-1 row-span-1 rounded-2xl overflow-hidden border border-[var(--card-border)] relative w-full bg-[#18181b]">
           <Image
-            src="/about/portrait.svg"
-            alt="Arpit Portrait"
+            src="/Arpit.jpeg"
+            alt="Arpit Saraswat Portrait"
             fill
             className="object-cover"
           />
@@ -168,10 +168,10 @@ export function AboutBento() {
                   Competitions
                 </span>
                 <span className="block md:hidden text-[8px] sm:text-[9px] text-[var(--muted)] leading-tight mt-1.5 opacity-70">
-                  1st Place Winner at AI Innovations Hackathon.
+                  Microsoft Top 10 • Chandigarh Univ Top 5 • Manipal Finalist.
                 </span>
                 <span className="hidden md:block text-[10px] text-[var(--muted)] leading-snug mt-2 opacity-60 group-hover/card:opacity-100 transition-opacity duration-300">
-                  1st Place Winner at the AI Innovations Hackathon. Proven ability to translate high-tech engineering and agent workflows into scalable apps.
+                  Top 10 at Microsoft Hack with India (2025), Top 5 at Chandigarh University (2025), and Finalist at Manipal University (2024).
                 </span>
               </div>
             </div>

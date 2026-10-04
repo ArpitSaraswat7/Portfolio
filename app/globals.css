@@ -4,30 +4,56 @@
 @layer base {
   :root, [data-theme="dark"] {
     --background: #0a0a0f;
+    --background-secondary: #12111a;
     --foreground: #e4e4e7;
     --muted: #a1a1aa;
     --muted-foreground: #71717a;
     --accent: #8b5cf6;
     --accent-hover: #a78bfa;
     --card: #18181b;
+    --card-surface: rgba(255, 255, 255, 0.03);
     --card-border: #27272a;
+    --card-border-subtle: rgba(255, 255, 255, 0.08);
+    --glass-bg: rgba(255, 255, 255, 0.03);
+    --glass-border: rgba(255, 255, 255, 0.08);
+    --glass-strong-bg: rgba(24, 24, 27, 0.85);
+    --nav-bg: rgba(24, 24, 27, 0.8);
+    --nav-border: rgba(255, 255, 255, 0.1);
+    --theme-toggle-bg: rgba(255, 255, 255, 0.05);
+    --theme-toggle-border: rgba(255, 255, 255, 0.1);
+    --theme-toggle-icon: #ffffff;
     --gradient-start: #6366f1;
     --gradient-end: #ec4899;
+    --dot-color: rgba(228, 228, 231, 0.08);
+    --shadow-color: rgba(0, 0, 0, 0.4);
     --shadow-elevation-low: 0px 1px 2px rgba(0, 0, 0, 0.2);
   }
 
   [data-theme="light"] {
-    --background: #ffffff;
-    --foreground: #18181b;
-    --muted: #71717a;
-    --muted-foreground: #a1a1aa;
-    --accent: #7c3aed;
-    --accent-hover: #6d28d9;
-    --card: #f4f4f5;
-    --card-border: #e4e4e7;
-    --gradient-start: #4f46e5;
-    --gradient-end: #db2777;
-    --shadow-elevation-low: 0px 1px 2px rgba(0, 0, 0, 0.05);
+    --background: #F6F3EE;
+    --background-secondary: #EEEAF4;
+    --foreground: #241D2E;
+    --muted: #625A6D;
+    --muted-foreground: #8B8296;
+    --accent: #7C3AED;
+    --accent-hover: #6D28D9;
+    --card: #FBF9FC;
+    --card-surface: rgba(255, 255, 255, 0.85);
+    --card-border: #DDD6E8;
+    --card-border-subtle: rgba(124, 58, 237, 0.12);
+    --glass-bg: rgba(255, 255, 255, 0.65);
+    --glass-border: rgba(221, 214, 232, 0.85);
+    --glass-strong-bg: rgba(255, 255, 255, 0.85);
+    --nav-bg: rgba(255, 255, 255, 0.78);
+    --nav-border: rgba(221, 214, 232, 0.9);
+    --theme-toggle-bg: #E9E1F7;
+    --theme-toggle-border: #D8C9EE;
+    --theme-toggle-icon: #6D28D9;
+    --gradient-start: #7C3AED;
+    --gradient-end: #C026D3;
+    --dot-color: rgba(109, 40, 217, 0.07);
+    --shadow-color: rgba(109, 40, 217, 0.08);
+    --shadow-elevation-low: 0px 1px 2px rgba(109, 40, 217, 0.05);
   }
 
   html {
@@ -35,6 +61,7 @@
     font-size: 16px;
     background-color: var(--background);
     color: var(--foreground);
+    transition: background-color 0.3s ease, color 0.3s ease;
   }
 
   body {
@@ -44,43 +71,29 @@
     overflow-x: hidden;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    transition: background-color 0.3s ease, color 0.3s ease;
   }
 }
 
 /* Background Atmospheric Dot Grid Pattern */
 .bg-dot-pattern {
-  background-image: radial-gradient(circle, rgba(228, 228, 231, 0.08) 1px, transparent 1px);
+  background-image: radial-gradient(circle, var(--dot-color) 1px, transparent 1px);
   background-size: 24px 24px;
-}
-
-[data-theme="light"] .bg-dot-pattern {
-  background-image: radial-gradient(circle, rgba(24, 24, 27, 0.05) 1px, transparent 1px);
 }
 
 /* Glassmorphism Styles matching DESIGN_SPEC.md & live site */
 .glass {
   -webkit-backdrop-filter: blur(16px);
   backdrop-filter: blur(16px);
-}
-[data-theme="dark"] .glass {
-  background: rgba(255, 255, 255, 0.03);
-  border: 1px solid rgba(255, 255, 255, 0.08);
-}
-[data-theme="light"] .glass {
-  background: rgba(0, 0, 0, 0.03);
-  border: 1px solid rgba(0, 0, 0, 0.08);
+  background: var(--glass-bg);
+  border: 1px solid var(--glass-border);
 }
 
 .glass-strong {
-  -webkit-backdrop-filter: blur(12px);
-  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(14px);
+  backdrop-filter: blur(14px);
+  background: var(--glass-strong-bg);
   border: 1px solid var(--card-border);
-}
-[data-theme="dark"] .glass-strong {
-  background: rgba(24, 24, 27, 0.8);
-}
-[data-theme="light"] .glass-strong {
-  background: rgba(255, 255, 255, 0.85);
 }
 
 /* Animated Text Gradient Shimmer - Subtle and smooth, not aggressively flashing */

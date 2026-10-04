@@ -4,7 +4,7 @@ import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { motion, AnimatePresence } from "framer-motion";
-import { Calendar, Moon, Sun } from "lucide-react";
+import { Moon, Sun, FileText } from "lucide-react";
 import { siteConfig } from "@/lib/site-config";
 
 interface NavItem {
@@ -28,8 +28,8 @@ export function Navbar() {
   const pathname = usePathname();
 
   useEffect(() => {
-    const savedTheme = localStorage.getItem("theme");
-    if (savedTheme === "light") {
+    const currentTheme = document.documentElement.getAttribute("data-theme") || localStorage.getItem("theme") || "dark";
+    if (currentTheme === "light") {
       setIsDark(false);
       document.documentElement.setAttribute("data-theme", "light");
       document.documentElement.classList.remove("dark");
@@ -64,17 +64,15 @@ export function Navbar() {
   }, [pathname]);
 
   const toggleTheme = () => {
-    if (isDark) {
-      document.documentElement.setAttribute("data-theme", "light");
-      document.documentElement.classList.remove("dark");
-      localStorage.setItem("theme", "light");
-      setIsDark(false);
-    } else {
-      document.documentElement.setAttribute("data-theme", "dark");
+    const nextTheme = isDark ? "light" : "dark";
+    document.documentElement.setAttribute("data-theme", nextTheme);
+    if (nextTheme === "dark") {
       document.documentElement.classList.add("dark");
-      localStorage.setItem("theme", "dark");
-      setIsDark(true);
+    } else {
+      document.documentElement.classList.remove("dark");
     }
+    localStorage.setItem("theme", nextTheme);
+    setIsDark(!isDark);
   };
 
   const handleNavClick = (e: React.MouseEvent<HTMLAnchorElement>, href: string, id: string) => {
@@ -109,8 +107,12 @@ export function Navbar() {
           <div className="absolute left-0 z-10">
             <button
               onClick={toggleTheme}
-              className="relative w-14 h-14 rounded-full glass-strong flex items-center justify-center transition-transform duration-300 hover:scale-105 active:scale-95 cursor-pointer shadow-xl shadow-black/10"
-              aria-label="Toggle theme"
+              style={{
+                backgroundColor: "var(--theme-toggle-bg)",
+                borderColor: "var(--theme-toggle-border)",
+              }}
+              className="relative w-14 h-14 rounded-full border flex items-center justify-center transition-all duration-300 hover:scale-105 active:scale-95 cursor-pointer shadow-xl shadow-black/10"
+              aria-label={isDark ? "Switch to light mode" : "Switch to dark mode"}
             >
               <div
                 className="absolute transition-all duration-300"
@@ -119,7 +121,7 @@ export function Navbar() {
                   transform: isDark ? "scale(1) rotate(0deg)" : "scale(0) rotate(-180deg)",
                 }}
               >
-                <Moon className="w-5 h-5 text-white" />
+                <Moon className="w-5 h-5 text-[var(--theme-toggle-icon)]" />
               </div>
               <div
                 className="absolute transition-all duration-300"
@@ -128,7 +130,7 @@ export function Navbar() {
                   transform: !isDark ? "scale(1) rotate(0deg)" : "scale(0) rotate(180deg)",
                 }}
               >
-                <Sun className="w-5 h-5 text-amber-500" />
+                <Sun className="w-5 h-5 text-[var(--theme-toggle-icon)]" />
               </div>
             </button>
           </div>
@@ -160,7 +162,7 @@ export function Navbar() {
                       style={{
                         background: "var(--accent)",
                         border: "1px solid var(--accent)",
-                        opacity: 0.15,
+                        opacity: isDark ? 0.15 : 0.12,
                       }}
                     />
                   )}
@@ -174,7 +176,7 @@ export function Navbar() {
 
           <div className="absolute right-0 z-10">
             <a
-              href={siteConfig.links.cal}
+              href={siteConfig.links.resume || "/Resume.pdf"}
               target="_blank"
               rel="noopener noreferrer"
               className="glass-strong rounded-full shadow-xl shadow-black/10 flex items-center gap-2 text-sm font-semibold transition-transform duration-300 hover:scale-105 h-14"
@@ -183,9 +185,10 @@ export function Navbar() {
                 paddingRight: "24px",
                 color: "var(--foreground)",
               }}
+              aria-label="View Resume"
             >
-              <Calendar className="w-4 h-4 text-violet-400" />
-              <span>Book a Call</span>
+              <FileText className="w-4 h-4 text-violet-400" />
+              <span>Resume</span>
             </a>
           </div>
         </div>
@@ -193,8 +196,12 @@ export function Navbar() {
         <div className="flex lg:hidden items-center justify-between relative w-full">
           <button
             onClick={toggleTheme}
-            className="relative w-12 h-12 sm:w-14 sm:h-14 rounded-full glass-strong flex items-center justify-center transition-transform duration-300 hover:scale-105 active:scale-95 cursor-pointer shadow-xl shadow-black/10 shrink-0"
-            aria-label="Toggle theme"
+            style={{
+              backgroundColor: "var(--theme-toggle-bg)",
+              borderColor: "var(--theme-toggle-border)",
+            }}
+            className="relative w-12 h-12 sm:w-14 sm:h-14 rounded-full border flex items-center justify-center transition-all duration-300 hover:scale-105 active:scale-95 cursor-pointer shadow-xl shadow-black/10 shrink-0"
+            aria-label={isDark ? "Switch to light mode" : "Switch to dark mode"}
           >
             <div
               className="absolute transition-all duration-300"
@@ -203,7 +210,7 @@ export function Navbar() {
                 transform: isDark ? "scale(1) rotate(0deg)" : "scale(0) rotate(-180deg)",
               }}
             >
-              <Moon className="w-4 h-4 sm:w-5 sm:h-5 text-white" />
+              <Moon className="w-4 h-4 sm:w-5 sm:h-5 text-[var(--theme-toggle-icon)]" />
             </div>
             <div
               className="absolute transition-all duration-300"
@@ -212,7 +219,7 @@ export function Navbar() {
                 transform: !isDark ? "scale(1) rotate(0deg)" : "scale(0) rotate(180deg)",
               }}
             >
-              <Sun className="w-4 h-4 sm:w-5 sm:h-5 text-amber-500" />
+              <Sun className="w-4 h-4 sm:w-5 sm:h-5 text-[var(--theme-toggle-icon)]" />
             </div>
           </button>
 
@@ -245,16 +252,17 @@ export function Navbar() {
           </button>
 
           <a
-            href={siteConfig.links.cal}
+            href={siteConfig.links.resume || "/Resume.pdf"}
             target="_blank"
             rel="noopener noreferrer"
             className="glass-strong rounded-full shadow-xl shadow-black/10 flex items-center justify-center gap-2 text-sm font-semibold transition-transform duration-300 hover:scale-105 shrink-0 px-3.5 py-3 sm:px-4 sm:py-3.5"
             style={{
               color: "var(--foreground)",
             }}
+            aria-label="View Resume"
           >
-            <Calendar className="w-4 h-4 text-violet-400" />
-            <span className="sr-only sm:not-sr-only">Book a Call</span>
+            <FileText className="w-4 h-4 text-violet-400" />
+            <span className="sr-only sm:not-sr-only">Resume</span>
           </a>
         </div>
 
@@ -294,7 +302,7 @@ export function Navbar() {
                   })}
 
                   <a
-                    href={siteConfig.links.cal}
+                    href={siteConfig.links.resume || "/Resume.pdf"}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="flex items-center justify-center gap-2 text-sm font-semibold rounded-full transition-transform duration-300 mt-2 hover:scale-[1.02]"
@@ -304,8 +312,8 @@ export function Navbar() {
                       border: "1px solid var(--card-border)",
                     }}
                   >
-                    <Calendar className="w-4 h-4 text-violet-400" />
-                    <span>Book a Call</span>
+                    <FileText className="w-4 h-4 text-violet-400" />
+                    <span>View Resume</span>
                   </a>
                 </div>
               </div>
@@ -316,3 +324,5 @@ export function Navbar() {
     </header>
   );
 }
+
+export default Navbar;

@@ -3,9 +3,9 @@ import "./globals.css";
 import { Navbar } from "@/components/ui/navbar";
 
 export const metadata: Metadata = {
-  title: "Arpit | Fullstack Developer & AI Engineer",
-  description: "Portfolio of Arpit — MCA in Generative AI @ SRM, Fullstack Developer building scalable AI systems, web apps, and autonomous agents.",
-  keywords: ["Arpit", "Fullstack Developer", "Generative AI", "React", "Next.js", "TypeScript", "Python", "FastAPI", "Portfolio"],
+  title: "Arpit Saraswat | Full Stack Developer & AI/ML Enthusiast",
+  description: "Portfolio of Arpit Saraswat — Full Stack Developer & AI/ML Enthusiast. Building full-stack products with AI, GenAI and modern web technologies.",
+  keywords: ["Arpit Saraswat", "Full Stack Developer", "AI/ML", "Generative AI", "React", "Python", "MERN Stack", "Portfolio"],
 };
 
 export default function RootLayout({
@@ -14,8 +14,29 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="dark" data-theme="dark">
-      <body className="font-sans antialiased bg-[#0a0a0f] text-[#e4e4e7] min-h-screen relative selection:bg-violet-500/30 selection:text-violet-200">
+    <html lang="en" className="dark" data-theme="dark" suppressHydrationWarning>
+      <head>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              (function() {
+                try {
+                  var saved = localStorage.getItem('theme');
+                  var prefDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+                  var theme = saved ? saved : (prefDark ? 'dark' : 'light');
+                  document.documentElement.setAttribute('data-theme', theme);
+                  if (theme === 'dark') {
+                    document.documentElement.classList.add('dark');
+                  } else {
+                    document.documentElement.classList.remove('dark');
+                  }
+                } catch (e) {}
+              })();
+            `,
+          }}
+        />
+      </head>
+      <body className="font-sans antialiased bg-[var(--background)] text-[var(--foreground)] min-h-screen relative selection:bg-violet-500/30 selection:text-violet-200">
         <Navbar />
         {children}
       </body>

@@ -25,9 +25,11 @@ export function MoreToExplore() {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4 sm:gap-5">
+          {/* 1. Guestbook Card - Entire Card is Clickable */}
           <Link
             href="/guestbook"
-            className="group relative p-5 sm:p-6 rounded-2xl md:rounded-3xl bg-white/[0.03] border border-white/10 backdrop-blur-xl shadow-lg hover:shadow-[0_0_30px_rgba(168,85,247,0.15)] hover:border-purple-500/40 hover:-translate-y-1 hover:scale-[1.01] transition-all duration-300 cursor-pointer overflow-hidden flex flex-col justify-between"
+            aria-label="Navigate to Guestbook"
+            className="group relative p-5 sm:p-6 rounded-2xl md:rounded-3xl bg-[var(--card)] border border-[var(--card-border)] backdrop-blur-xl shadow-lg hover:shadow-[0_0_30px_rgba(168,85,247,0.15)] hover:border-purple-500/40 hover:-translate-y-1 hover:scale-[1.01] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-purple-500/70 focus-visible:ring-offset-2 transition-all duration-300 cursor-pointer overflow-hidden flex flex-col justify-between"
           >
             <div className="absolute top-0 left-0 right-0 h-32 bg-gradient-to-b from-purple-500/10 via-transparent to-transparent pointer-events-none" />
 
@@ -37,7 +39,7 @@ export function MoreToExplore() {
               </div>
 
               <div>
-                <h3 className="text-lg sm:text-xl font-bold text-[var(--foreground)] group-hover:text-purple-300 transition-colors">
+                <h3 className="text-lg sm:text-xl font-bold text-[var(--foreground)] group-hover:text-purple-400 transition-colors">
                   Guestbook
                 </h3>
                 <p className="text-[var(--muted)] text-xs sm:text-sm mt-1 leading-relaxed">
@@ -46,15 +48,17 @@ export function MoreToExplore() {
               </div>
             </div>
 
-            <div className="mt-4 pt-3 border-t border-white/5 flex items-center gap-1.5 text-xs font-semibold text-purple-400 group-hover:text-purple-300 transition-colors">
+            <div className="mt-4 pt-3 border-t border-[var(--card-border)] flex items-center gap-1.5 text-xs font-semibold text-purple-400 group-hover:text-purple-500 transition-colors">
               <span>Explore</span>
               <ArrowRight className="w-3.5 h-3.5 group-hover:translate-x-1 transition-transform" />
             </div>
           </Link>
 
+          {/* 2. Achievements Card - Entire Card is Clickable */}
           <Link
             href="/achievements"
-            className="group relative p-5 sm:p-6 rounded-2xl md:rounded-3xl bg-white/[0.03] border border-white/10 backdrop-blur-xl shadow-lg hover:shadow-[0_0_30px_rgba(245,158,11,0.15)] hover:border-amber-500/40 hover:-translate-y-1 hover:scale-[1.01] transition-all duration-300 cursor-pointer overflow-hidden flex flex-col justify-between"
+            aria-label="Navigate to Achievements"
+            className="group relative p-5 sm:p-6 rounded-2xl md:rounded-3xl bg-[var(--card)] border border-[var(--card-border)] backdrop-blur-xl shadow-lg hover:shadow-[0_0_30px_rgba(245,158,11,0.15)] hover:border-amber-500/40 hover:-translate-y-1 hover:scale-[1.01] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-amber-500/70 focus-visible:ring-offset-2 transition-all duration-300 cursor-pointer overflow-hidden flex flex-col justify-between"
           >
             <div className="absolute top-0 left-0 right-0 h-32 bg-gradient-to-b from-amber-500/10 via-transparent to-transparent pointer-events-none" />
 
@@ -64,7 +68,7 @@ export function MoreToExplore() {
               </div>
 
               <div>
-                <h3 className="text-lg sm:text-xl font-bold text-[var(--foreground)] group-hover:text-amber-300 transition-colors">
+                <h3 className="text-lg sm:text-xl font-bold text-[var(--foreground)] group-hover:text-amber-500 transition-colors">
                   Achievements
                 </h3>
                 <p className="text-[var(--muted)] text-xs sm:text-sm mt-1 leading-relaxed">
@@ -73,15 +77,17 @@ export function MoreToExplore() {
               </div>
             </div>
 
-            <div className="mt-4 pt-3 border-t border-white/5 flex items-center gap-1.5 text-xs font-semibold text-amber-400 group-hover:text-amber-300 transition-colors">
+            <div className="mt-4 pt-3 border-t border-[var(--card-border)] flex items-center gap-1.5 text-xs font-semibold text-amber-400 group-hover:text-amber-500 transition-colors">
               <span>Explore</span>
               <ArrowRight className="w-3.5 h-3.5 group-hover:translate-x-1 transition-transform" />
             </div>
           </Link>
 
+          {/* 3. My Links Card - Entire Card is Clickable */}
           <Link
             href="/links"
-            className="group relative p-5 sm:p-6 rounded-2xl md:rounded-3xl bg-white/[0.03] border border-white/10 backdrop-blur-xl shadow-lg hover:shadow-[0_0_30px_rgba(6,182,212,0.15)] hover:border-cyan-500/40 hover:-translate-y-1 hover:scale-[1.01] transition-all duration-300 cursor-pointer overflow-hidden flex flex-col justify-between"
+            aria-label="Navigate to My Links"
+            className="group relative p-5 sm:p-6 rounded-2xl md:rounded-3xl bg-[var(--card)] border border-[var(--card-border)] backdrop-blur-xl shadow-lg hover:shadow-[0_0_30px_rgba(6,182,212,0.15)] hover:border-cyan-500/40 hover:-translate-y-1 hover:scale-[1.01] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyan-500/70 focus-visible:ring-offset-2 transition-all duration-300 cursor-pointer overflow-hidden flex flex-col justify-between"
           >
             <div className="absolute top-0 left-0 right-0 h-32 bg-gradient-to-b from-cyan-500/10 via-transparent to-transparent pointer-events-none" />
 
@@ -91,7 +97,7 @@ export function MoreToExplore() {
               </div>
 
               <div>
-                <h3 className="text-lg sm:text-xl font-bold text-[var(--foreground)] group-hover:text-cyan-300 transition-colors">
+                <h3 className="text-lg sm:text-xl font-bold text-[var(--foreground)] group-hover:text-cyan-400 transition-colors">
                   My Links
                 </h3>
                 <p className="text-[var(--muted)] text-xs sm:text-sm mt-1 leading-relaxed">
@@ -100,7 +106,7 @@ export function MoreToExplore() {
               </div>
             </div>
 
-            <div className="mt-4 pt-3 border-t border-white/5 flex items-center gap-1.5 text-xs font-semibold text-cyan-400 group-hover:text-cyan-300 transition-colors">
+            <div className="mt-4 pt-3 border-t border-[var(--card-border)] flex items-center gap-1.5 text-xs font-semibold text-cyan-400 group-hover:text-cyan-500 transition-colors">
               <span>Explore</span>
               <ArrowRight className="w-3.5 h-3.5 group-hover:translate-x-1 transition-transform" />
             </div>
@@ -110,3 +116,5 @@ export function MoreToExplore() {
     </section>
   );
 }
+
+export default MoreToExplore;

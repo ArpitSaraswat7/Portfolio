@@ -1,8 +1,7 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Link from "next/link";
-import { ArrowLeft } from "lucide-react";
 import { Footer } from "@/components/ui/footer";
 import { guestbookMessages, GuestbookMessage } from "@/lib/site-config";
 
@@ -58,11 +57,45 @@ const avatarColorPalette = [
 
 export default function GuestbookPage() {
   const [messages] = useState<GuestbookMessage[]>(guestbookMessages);
+  const [toastMessage, setToastMessage] = useState<string | null>(null);
 
-  const handleAuthPlaceholder = (_provider: string) => {};
+  useEffect(() => {
+    if (!toastMessage) return;
+    const timer = setTimeout(() => {
+      setToastMessage(null);
+    }, 3500);
+    return () => clearTimeout(timer);
+  }, [toastMessage]);
+
+  const handleGithubLogin = () => {
+    setToastMessage("GitHub sign-in is coming soon 🚀");
+  };
+
+  const handleGoogleLogin = () => {
+    setToastMessage("Google sign-in is coming soon 🚀");
+  };
 
   return (
-    <div className="min-h-screen flex flex-col justify-between bg-[#0a0a0f] text-[#e4e4e7] bg-dot-pattern">
+    <div className="min-h-screen flex flex-col justify-between bg-[var(--background)] text-[var(--foreground)] bg-dot-pattern">
+      {/* Toast Notification */}
+      {toastMessage && (
+        <div
+          role="status"
+          aria-live="polite"
+          className="fixed bottom-6 right-6 z-50 flex items-center gap-2.5 px-4 py-3 rounded-xl bg-[var(--card)] border border-purple-500/40 text-[var(--foreground)] text-xs sm:text-sm font-medium shadow-[0_10px_30px_rgba(0,0,0,0.15),0_0_20px_rgba(168,85,247,0.25)] backdrop-blur-xl animate-in fade-in slide-in-from-bottom-3 duration-300"
+        >
+          <span className="text-sm">🚀</span>
+          <span>{toastMessage}</span>
+          <button
+            onClick={() => setToastMessage(null)}
+            className="ml-2 text-[var(--muted)] hover:text-[var(--foreground)] p-0.5 rounded-lg hover:bg-white/10 transition-colors"
+            aria-label="Close notification"
+          >
+            ✕
+          </button>
+        </div>
+      )}
+
       <div className="fixed inset-0 pointer-events-none -z-10 overflow-hidden">
         <div className="absolute top-20 -left-32 w-96 h-96 bg-purple-600/15 rounded-full blur-[120px]" />
         <div className="absolute top-1/2 -right-32 w-96 h-96 bg-violet-600/15 rounded-full blur-[120px]" />
@@ -73,10 +106,9 @@ export default function GuestbookPage() {
         <div className="mb-8">
           <Link
             href="/"
-            className="inline-flex items-center gap-2 text-xs font-semibold text-zinc-400 hover:text-white px-4 py-2 rounded-full bg-white/5 border border-white/10 hover:border-purple-500/40 hover:bg-purple-500/10 transition-all duration-300 backdrop-blur-md cursor-pointer"
+            className="inline-flex items-center gap-2 text-xs font-semibold text-[var(--muted)] hover:text-[var(--foreground)] px-4 py-2 rounded-full bg-[var(--card)] border border-[var(--card-border)] hover:border-purple-500/40 hover:bg-purple-500/10 transition-all duration-300 backdrop-blur-md cursor-pointer"
           >
-            <ArrowLeft className="w-4 h-4" />
-            <span>← Back to home</span>
+            ← Back to home
           </Link>
         </div>
 
@@ -84,36 +116,50 @@ export default function GuestbookPage() {
           <span className="text-xs sm:text-sm font-mono tracking-widest text-purple-400 uppercase font-semibold">
             THE COMMUNITY WALL
           </span>
-          <h1 className="mt-3 text-4xl sm:text-5xl md:text-6xl font-extrabold tracking-tight text-white">
+          <h1 className="mt-3 text-4xl sm:text-5xl md:text-6xl font-extrabold tracking-tight text-[var(--foreground)]">
             Leave Your <span className="text-gradient-shimmer">Mark</span>
           </h1>
-          <p className="mt-3.5 text-sm sm:text-base text-zinc-400 max-w-md mx-auto leading-relaxed">
+          <p className="mt-3.5 text-sm sm:text-base text-[var(--muted)] max-w-md mx-auto leading-relaxed">
             Share your thoughts, feedback, or just say hi!
           </p>
         </div>
 
-        <div className="relative p-6 sm:p-8 rounded-2xl sm:rounded-3xl bg-white/[0.03] border border-white/10 backdrop-blur-xl shadow-[0_0_40px_rgba(168,85,247,0.08)] mb-12 overflow-hidden text-center">
+        <div className="relative p-6 sm:p-8 rounded-2xl sm:rounded-3xl bg-[var(--card)] border border-[var(--card-border)] backdrop-blur-xl shadow-[0_0_40px_rgba(168,85,247,0.08)] mb-12 overflow-hidden text-center">
           <div className="absolute top-0 left-0 right-0 h-28 bg-gradient-to-b from-purple-500/10 via-transparent to-transparent pointer-events-none" />
 
-          <p className="relative z-10 text-sm sm:text-base font-medium text-zinc-200 mb-6">
+          <p className="relative z-10 text-sm sm:text-base font-medium text-[var(--foreground)] mb-6">
             Sign in to pin your message to this board forever.
           </p>
 
           <div className="relative z-10 flex flex-col sm:flex-row items-center justify-center gap-3.5">
             <button
-              onClick={() => handleAuthPlaceholder("GitHub")}
-              className="w-full sm:w-auto px-5 py-3 rounded-xl bg-white/[0.05] hover:bg-white/[0.1] border border-white/10 hover:border-purple-500/40 text-white text-xs sm:text-sm font-semibold flex items-center justify-center gap-2.5 transition-all duration-300 shadow-sm hover:shadow-[0_0_20px_rgba(168,85,247,0.15)] cursor-pointer"
+              type="button"
+              onClick={handleGithubLogin}
+              className="group w-full sm:w-auto px-4 sm:px-5 py-3 rounded-xl bg-[var(--card)] hover:bg-[var(--glass-bg)] border border-[var(--card-border)] hover:border-purple-500/40 text-[var(--foreground)] text-xs sm:text-sm font-semibold flex items-center justify-between sm:justify-center gap-3 transition-all duration-300 shadow-sm hover:shadow-[0_0_20px_rgba(168,85,247,0.15)] hover:scale-[1.01] active:scale-[0.99] cursor-pointer"
+              aria-label="Sign in with GitHub (Coming Soon)"
             >
-              <GithubIcon className="w-4 h-4" />
-              <span>Sign in with GitHub</span>
+              <div className="flex items-center gap-2.5">
+                <GithubIcon className="w-4 h-4 text-[var(--foreground)] transition-colors" />
+                <span>Sign in with GitHub</span>
+              </div>
+              <span className="text-[10px] font-mono tracking-wider uppercase text-[var(--muted)] bg-[var(--glass-bg)] border border-[var(--card-border)] px-2 py-0.5 rounded-full group-hover:text-purple-400 group-hover:border-purple-500/30 transition-colors">
+                Coming Soon
+              </span>
             </button>
 
             <button
-              onClick={() => handleAuthPlaceholder("Google")}
-              className="w-full sm:w-auto px-5 py-3 rounded-xl bg-white/[0.05] hover:bg-white/[0.1] border border-white/10 hover:border-purple-500/40 text-white text-xs sm:text-sm font-semibold flex items-center justify-center gap-2.5 transition-all duration-300 shadow-sm hover:shadow-[0_0_20px_rgba(168,85,247,0.15)] cursor-pointer"
+              type="button"
+              onClick={handleGoogleLogin}
+              className="group w-full sm:w-auto px-4 sm:px-5 py-3 rounded-xl bg-[var(--card)] hover:bg-[var(--glass-bg)] border border-[var(--card-border)] hover:border-purple-500/40 text-[var(--foreground)] text-xs sm:text-sm font-semibold flex items-center justify-between sm:justify-center gap-3 transition-all duration-300 shadow-sm hover:shadow-[0_0_20px_rgba(168,85,247,0.15)] hover:scale-[1.01] active:scale-[0.99] cursor-pointer"
+              aria-label="Sign in with Google (Coming Soon)"
             >
-              <GoogleIcon className="w-4 h-4" />
-              <span>Sign in with Google</span>
+              <div className="flex items-center gap-2.5">
+                <GoogleIcon className="w-4 h-4" />
+                <span>Sign in with Google</span>
+              </div>
+              <span className="text-[10px] font-mono tracking-wider uppercase text-[var(--muted)] bg-[var(--glass-bg)] border border-[var(--card-border)] px-2 py-0.5 rounded-full group-hover:text-purple-400 group-hover:border-purple-500/30 transition-colors">
+                Coming Soon
+              </span>
             </button>
           </div>
         </div>
@@ -124,7 +170,7 @@ export default function GuestbookPage() {
             return (
               <div
                 key={item.id}
-                className="group relative p-5 sm:p-6 rounded-2xl bg-white/[0.03] border border-white/10 backdrop-blur-xl shadow-lg hover:border-purple-500/30 hover:bg-white/[0.05] hover:-translate-y-0.5 transition-all duration-300 overflow-hidden"
+                className="group relative p-5 sm:p-6 rounded-2xl bg-[var(--card)] border border-[var(--card-border)] backdrop-blur-xl shadow-lg hover:border-purple-500/30 hover:bg-[var(--glass-bg)] hover:-translate-y-0.5 transition-all duration-300 overflow-hidden"
               >
                 <div className="flex items-start gap-4">
                   <div
@@ -135,10 +181,10 @@ export default function GuestbookPage() {
 
                   <div className="flex-1 min-w-0">
                     <div className="flex flex-wrap items-baseline gap-2">
-                      <span className="text-sm sm:text-base font-bold text-white tracking-tight">
+                      <span className="text-sm sm:text-base font-bold text-[var(--foreground)] tracking-tight">
                         {item.name}
                       </span>
-                      <span className="text-xs text-zinc-500">
+                      <span className="text-xs text-[var(--muted)]">
                         {item.date} • {item.relativeTime}
                       </span>
                       {item.edited && (
@@ -148,7 +194,7 @@ export default function GuestbookPage() {
                       )}
                     </div>
 
-                    <p className="mt-1.5 text-xs sm:text-sm text-zinc-300 leading-relaxed">
+                    <p className="mt-1.5 text-xs sm:text-sm text-[var(--muted)] leading-relaxed">
                       {item.message}
                     </p>
                   </div>

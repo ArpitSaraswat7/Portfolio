@@ -22,6 +22,16 @@ function LinkedinIcon({ className = "w-5 h-5" }: { className?: string }) {
   );
 }
 
+function InstagramIcon({ className = "w-5 h-5" }: { className?: string }) {
+  return (
+    <svg className={className} fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" viewBox="0 0 24 24" aria-hidden="true">
+      <rect width="20" height="20" x="2" y="2" rx="5" ry="5" />
+      <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+      <line x1="17.5" x2="17.51" y1="6.5" y2="6.5" />
+    </svg>
+  );
+}
+
 function MailIcon({ className = "w-5 h-5" }: { className?: string }) {
   return (
     <svg
@@ -54,11 +64,11 @@ export function Footer() {
         <div className="flex flex-col items-center sm:flex-row sm:justify-between gap-6">
           <div className="flex items-center gap-3 text-base text-[var(--muted)]">
             <Link href="/" className="font-bold text-[var(--foreground)] text-lg hover:opacity-80 transition-opacity">
-              <span className="text-gradient-shimmer">A</span>
+              <span className="text-gradient-shimmer">{siteConfig.monogram}</span>
             </Link>
             <span>&bull;</span>
             <span className="text-xs sm:text-sm">
-              &copy; {new Date().getFullYear()} {siteConfig.name}
+              &copy; 2026 {siteConfig.name}
             </span>
           </div>
 
@@ -84,6 +94,16 @@ export function Footer() {
             </a>
 
             <a
+              href={siteConfig.links.instagram}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-[var(--muted)] hover:text-white transition-colors hover:scale-110 transform duration-200"
+              aria-label="Instagram"
+            >
+              <InstagramIcon className="w-5 h-5" />
+            </a>
+
+            <a
               href={siteConfig.links.emailMailto}
               className="text-[var(--muted)] hover:text-white transition-colors hover:scale-110 transform duration-200"
               aria-label="Email"
@@ -96,3 +116,5 @@ export function Footer() {
     </footer>
   );
 }
+
+export default Footer;
